@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Petrona:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Petrona:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+// font-family: Petrona
+// font-family: Dm sans
+
+
+//variables Globales
+//operadores - inicio
+$ancho: 720px;
+$alto: 100px;
+$alto2: 500px;
+//fonts
+$font1: 'Petrona', serif;
+$font2: 'DM Sans', sans-serif;
+$bold1:700;
+$bold2: 500;
+// paleta colores
+$color1:#C3C4C6;
+$color2:#0000;
+$color3:#CFF0FC;
+$color4:#3CBEE5;
+$color5:#3679bc;
+$color6:#ffffff;
+$color7:black;
+//dimensiones
+$size1: 100%;
+$size2: 50%;
+$size3: 20px;
+$size4: 50px;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    background-color: $color6;
+    font-family: $font1;
+    font-size: calc($size3 - 1px);
+        a{
+        color: $color5 !important;
+    }
+}
+
+.nav-list{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+
+.nav-link:hover{
+    color: $color4 !important;
+}
+
+//** index **//
+
+.carousel-caption{
+    h1{text-align: center;
+        color: $color4;
+        font-weight: $bold1;
+    }
+}
+
+.carousel-caption{
+    p{
+        text-align: center;
+        color: $color4;
+    }
+}
+
+.card-index{
+    background-color: $color4;
+    background: linear-gradient(180deg,rgb(255, 254, 254) 0%,$color4 100%),
+}
+
+.sec{
+    text-transform: uppercase;
+    background-color: $color3;
+    text-align: center;
+        h2{color: $color4;
+            padding: $size3;
+            font-family: $font1;
+    }
+}
+
+.cont-productos-index{
+    padding-top: cal($size3 -10px);
+    padding-bottom: $size3;
+    align-items: center;
+    background-color: $color4;
+}
+
+.cont-productos-index2{
+    h3{font-family: $font2;
+    padding-top: $size3;
+    text-align: center;
+    font-size: $size3;
+    color: $color7;
+}
+}
+
+.productos-index2{
+    border-radius: $size3;
+    transition: 0.7s;
+        :hover{
+        transform: scale(0.9);
+                /* se reduce en un 10% */
+        transition: 0.7s;
+        border-radius: $size4;
+    }
+}
+
+.cont-locales-index{
+    align-items: center;
+    padding-bottom: $size3;
+}
+
+
+//** Pag-Productos **// 
+.jumbotron-productos{
+    background-image: url(../multimedia/index1-carusel-chipa.png);
+    animation: zoomIn 10s ease-in-out infinite;
+    background-size: cover;
+    background-position: center;
+    height: calc($size4 *8);
+    /*altura 400px*/
+}
+
+@keyframes zoomIn {
+    0% {
+    transform: scale(1);
+    }
+    50% {
+    transform: scale(1.05);
+    }
+    100% {
+    transform: scale(1);
+    }
+}
+
+.cont-jumbotron{
+    background-color: $color4;
+    background: linear-gradient(180deg,rgb(255, 254, 254) 0%,$color2 100%);
+    border-color: $color3 !important;
+    h1{font-family: $font1;
+        color:$color3;
+    }
+}
+
+.cont-jumbotron{
+    p{font-family: $font1;
+        color:$color3
+    }
+}
+
+.productos{
+    padding-top: $size3;
+    padding-bottom: $size3;
+    h2{
+        font-family: $font1;
+        color: $color7;
+    }
+}
+
+.productos{
+    p{font-family: $font2;
+    color: $color7;
+    }
+}
+
+.card-productos{
+    a{color: $color3;
+        background-color: $color4;
+        border-color: $color3;
+        font-family: $font2;
+    }
+}
+
+.card-body-productos{
+        color: $color7;
+        font-family: $font2;
+}
+
+.galeria-productos{
+    padding: $size3;
+    background-color: $color4;
+    background: linear-gradient(180deg,rgb(255, 254, 254) 0%,$color2 100%);
+    h3{
+        color: $color7;
+        font-family: $font2;
+        padding: $size3;
+        text-align: center
+    }
+}
+
+.productogaleria{
+    border-radius: $size3;
+    transition: 0.7s;
+        :hover{
+        transform: scale(0.9);
+                /* se reduce en un 10% */
+        transition: 0.7s;
+        border-radius: $size4;}
+}
+
+
+//** Pag-Nosotros **// 
+.jumbotron-nosotros{
+    background-image: url(../multimedia/index1-carusel-pan.png);
+    animation: zoomIn 10s ease-in-out infinite;
+    background-size: cover;
+    background-position: center;
+    height: calc($size4 *8);
+    /*altura 400px*/
+}
+
+@keyframes zoomIn {
+    0% {
+    transform: scale(1);
+    }
+    50% {
+    transform: scale(1.05);
+    }
+    100% {
+    transform: scale(1);
+    }
+}
+
+        //** .cont-jumbotron // se repite
+
+.card-nosotros{
+    padding: $size3;
+    h2{
+        font-family: $font1;
+        color: $color7;
+    }
+}
+
+.card-nosotros{
+    p{
+        font-family: $font2;
+        color: $color7;
+    }
+}
+
+.card-body-nosotros{
+    background-color: $color4;
+    background: linear-gradient(180deg,rgb(255, 254, 254) 0%,$color4 100%),
+}
+
+
+//** Pag-Locales **//
+
+.jumbotron-locales{
+    background-image: url(../multimedia/jumbotron.locales.png);
+    animation: zoomIn 10s ease-in-out infinite;
+    background-size: cover;
+    background-position: center;
+    height: calc($size4 *8);
+    /*altura 400px*/
+}
+
+@keyframes zoomIn {
+    0% {
+    transform: scale(1);
+    }
+    50% {
+    transform: scale(1.05);
+    }
+    100% {
+    transform: scale(1);
+    }
+}
+        //** .cont-jumbotron // se repite
+
+.locales{
+    padding-top: $size3;
+    padding-bottom: $size3;
+    h2{
+        font-family: $font1;
+        color: $color7;
+    }
+}
+
+.locales{
+    p{
+        font-family: $font2;
+        color: $color7;
+    }
+}
+
+.table{
+    color: $color7;
+}
+
+.sec-locales{
+    background-color: $color4;
+    background: linear-gradient(180deg,rgb(255, 254, 254) 0%,$color4 100%),
+
+}
+
+.sec-locales{
+    h3{padding: $size3;
+    font-family: $font1;
+    text-align: center;
+    }
+}
+
+.cont-locales{
+    align-items: center;
+    padding-bottom: $size3;
+    font-family: $font2;
+}
+
+    //** Pag-Contacto **//
+
+.jumbotron-contacto{
+        background-image: url(../multimedia/index1-carusel-facturas.jpg);
+        animation: zoomIn 10s ease-in-out infinite;
+        background-size: cover;
+        background-position: center;
+        height: calc($size4 *8);
+        /*altura 400px*/
+        overflow-x: hidden;
+        background-attachment: fixed;
+}
+
+    @keyframes zoomIn {
+        0% {
+        transform: scale(1);
+        }
+        50% {
+        transform: scale(1.05);
+        }
+        100% {
+        transform: scale(1);
+        }
+    }
+    
+            //** .cont-jumbotron // se repite
+
+.servicios{
+    color: $color3;
+    h2{padding-bottom: $size3;
+        text-align: center;
+    }
+}
+
+.servicios{
+p{color: $color3;}
+}
+
+.cuadrado{
+        height: calc($size4*2);
+        width: calc($size4*4);
+        background-color: $color4;
+        border: 2px solid $color3;
+        line-height: 100px;
+        color: $color1;
+        text-align: center;
+        font-weight: $font1;
+        text-transform: uppercase;
+        font-size: $size3;
+        margin: 0 auto;
+        transition: 0.7s;
+        border-radius: $size4;
+    }
+
+.cuadrado:hover{
+        transform: scale(0.9);
+        background-color: $color1;
+        color: $color4;
+        border-radius: $size3}  
+
+    
+.contacto{
+    padding-top: $size3;
+    padding-bottom: $size3;}
+
+.btn{
+            background-color: $color1;
+            border-color: $color2;}
+
+.btn:hover{
+        background-color:$color4;
+        border-color: $color1;
+        color:$color1;
+        }
+
+//** Cierre página **//
+footer{
+    background-color: $color3;
+    color: $color4;
+    text-align: center;
+    padding: $size3;
+    .redes a{
+    letter-spacing: $size3;
+    text-align: center;
+    //** 20px**//
+    font-size: $size3;
+    text-decoration: none;
+    color: $color4;
+        :hover{
+            color: $color3;
+        }
+    }
+}
+
+.logo-footer{
+    padding: $size3;
+}
+
+.subir{
+    width: calc($size4 - 10px);
+    height: calc($size4 - 10px);
+    background-color: $color3;
+    text-decoration: none;
+    color: $color4;
+    position: fixed;
+    bottom: calc($size4 - 10px);
+    right: calc($size4 - 10px);
+    text-align: center;
+    line-height: calc($size4 - 10px);
+    font-size: $size3;
+        :hover{
+        color: $color2;
+        }
+}
+
+.cierre{
+    text-align: center;
+}

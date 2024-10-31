@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!-- español-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Posicionamiento SEO -->
+    <meta name="description" content="Isa: tecnología, vanguardia, y seguridad desde 1925">
+    <!-- vincular con font awesome para íconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- poner el logo pequeño en la pestaña -->
+    <link rel="shortcut icon" href="./multimedia/logo1.png" type="image/x-icon">
+    <!-- vincular con Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- vincular con Animation WOW-->
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- vincular con CSS-->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Isa | Laboratorios </title>
+</head>
+<body>
+<header>
+    <style>
+        /* Agrega tus estilos personalizados aquí */
+        .hero-section {
+            background: url(./multimedia/index1-carusel1.png) no-repeat center center;
+            background-size: cover;
+            padding: 100px 0;
+        }
+        .card-product {
+            transition: transform 0.3s ease;
+        }
+        .card-product:hover {
+            transform: scale(1.05);
+        }
+        .highlight {
+            color: #0080ff; /* Color de marca */
+        }
+    </style>
+
+        <!--nav bar inicio-->
+        <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./multimedia/logo1.png" alt="Pan&Cia" class="mx-auto d-block"
+                style="width:30%"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-list" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="./pages/empresa.html">Empresa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/productos.html">Productos</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://pedidos.isalaboratorios.com.ar/pedidos/site/pLogin.php">Intranet</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+    <!--nav bar final-->
+
+</header>
+
+<main>  
+
+<!-- Hero Section con Video de Fondo -->
+<section class="hero-section position-relative text-center d-flex align-items-center justify-content-center">
+    <!-- Video de fondo -->
+    <video autoplay loop muted playsinline class="position-absolute w-100 h-100" style="object-fit: cover;">
+        <source src="./multimedia/videoBienvenida.mp4" type="video/mp4">
+        Tu navegador no soporta video HTML5.
+    </video>
+    
+    <!-- Contenido sobre el video -->
+    <div class="container position-relative text-white">
+        <h1 class="display-4 fw-bold">Bienvenido a ISA Laboratorios</h1>
+        <p class="lead">Innovación y confianza en el cuidado de tu salud</p>
+        <a href="#productos-novedad" class="btn btn-primary mt-3">Ver Novedades</a>
+    </div>
+
+    <!-- Overlay opcional para mejorar la legibilidad del texto -->
+    <div class="overlay position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.5);"></div>
+</section>
+
+
+<!-- Sección de la Marca -->
+<section class="container py-5" id="sobre-nosotros">
+    <div class="row">
+        <div class="col-lg-6">
+            <img src="ruta-a-imagen-laboratorio.jpg" alt="Laboratorio" class="img-fluid rounded">
+        </div>
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <h2>¿Quiénes Somos?</h2>
+            <p>En <span class="highlight">ISA Laboratorios</span>, nos dedicamos a crear productos de alta calidad que te ayudan a mejorar tu bienestar.</p>
+            <p>Nuestro compromiso con la investigación científica y la innovación nos distingue en el mercado de salud.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Beneficios -->
+<section class="bg-light py-5">
+    <div class="container text-center">
+        <h2>Nuestros Beneficios</h2>
+        <div class="row mt-4">
+            <div class="col-md-3">
+                <i class="bi bi-shield-check display-5"></i>
+                <h4>Calidad Certificada</h4>
+                <p>Productos sometidos a rigurosos controles de calidad.</p>
+            </div>
+            <div class="col-md-3">
+                <i class="bi bi-flask display-5"></i>
+                <h4>Innovación Científica</h4>
+                <p>Fórmulas avanzadas desarrolladas por expertos.</p>
+            </div>
+            <div class="col-md-3">
+                <i class="bi bi-heart display-5"></i>
+                <h4>Compromiso con la Salud</h4>
+                <p>Productos que respaldan tu bienestar.</p>
+            </div>
+            <div class="col-md-3">
+                <i class="bi bi-people display-5"></i>
+                <h4>Apoyo a la Comunidad</h4>
+                <p>Impulsamos la salud pública y el bienestar.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Productos Destacados (Novedades) -->
+<section class="container py-5" id="productos-novedad">
+    <h2 class="text-center">Novedades</h2>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card card-product">
+                <img src="ruta-a-imagen-producto1.jpg" class="card-img-top" alt="Producto 1">
+                <div class="card-body">
+                    <h5 class="card-title">Producto Novedad 1</h5>
+                    <p class="card-text">Descripción breve del producto destacando sus beneficios y propiedades.</p>
+                    <a href="#" class="btn btn-primary">Más información</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card card-product">
+                <img src="ruta-a-imagen-producto2.jpg" class="card-img-top" alt="Producto 2">
+                <div class="card-body">
+                    <h5 class="card-title">Producto Novedad 2</h5>
+                    <p class="card-text">Descripción breve del producto destacando sus beneficios y propiedades.</p>
+                    <a href="#" class="btn btn-primary">Más información</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Sección de Testimonios -->
+<section class="bg-light py-5">
+    <div class="container text-center">
+        <h2>Testimonios</h2>
+        <div id="testimonios-carousel" class="carousel slide mt-4" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p class="lead">"ISA Laboratorios me ayudó a mejorar mi calidad de vida."</p>
+                    <p><strong>- Cliente Satisfecho</strong></p>
+                </div>
+                <div class="carousel-item">
+                    <p class="lead">"Confío en sus productos para cuidar mi salud y la de mi familia."</p>
+                    <p><strong>- Profesional de la Salud</strong></p>
+                </div>
+                <!-- Más testimonios si es necesario -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Contacto y Suscripción -->
+<section class="container py-5">
+    <div class="row text-center">
+        <div class="col-md-6">
+            <div class="wow animate__animated animate__bounceInLeft">
+                <div class="card" style="width:400px">
+                    <iframe class="card-img-top" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.106241336407!2d-58.5051893235359!3d-34.65201976005198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9a9fc2dae31%3A0x2dc4ed168580d466!2sAv.%20Juan%20Bautista%20Alberdi%205862%2C%20C1440%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1730381649904!5m2!1ses!2sar" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="card-body">
+                        <h4 class="card-title">ISA Laboratorios</h4>
+                        <p class="card-text">Ciudad Autónoma de Buenos Aires</p>
+                        </div>
+                </div>
+                </div>
+        </div>
+        <div class="col-md-6">
+            <h4>Contáctanos</h4>
+            <h4>ISA Laboratorios</h4>
+            <p>Dirección: Avda. Juan B. Alberdi Nº 5862
+                Piso 3 – Dto. D (1440 CUX.) C.A.B.A. Argentina</p>
+            <p>Email: info@isalaboratorios.com.ar</p>
+            <h4>Administración y Ventas</h4>
+            <p>4683-8888 (líneas rotativas)</p>
+            <p>Atención al consumidor: 0810-666-4306</p>
+            <h4>Recursos Humanos</h4>
+            <p>Dejanos tu C.V.</p>
+            <p>Email: rrhh@isalaboratorios.com.ar</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!--Cierre página-->
+<footer>
+    <div class="row">
+        <div class="col-sm-1 col-md-6">
+            <img src="./multimedia/logo1.png" alt="Laboratorio" class="mx-auto d-block"
+                style="width:20%">
+        </div>
+        <div class="col-sm-1 col-md-6 cierre">
+            <h8 class="wow animate__animated animate__rollIn">Todos los derechos reservados</h8>
+            <div class = "redes">
+        <a href="https://www.instagram.com/suplementodiad/?hl=es-la"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/suplementodiad/?hl=es-la"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+</footer>
+
+<!--Subir de la página-->
+<a href="#" class="subir"><i class="fa-solid fa-upload"></i></a>
+
+<!-- inicia sript de WOW (antes de cerrar body)-->
+<script src="./utilidades/js/wow.min.js"></script>
+<script>new WOW().init();</script>
+<!-- inicia sript de BS (antes de cerrar body)-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+</body>
+</html>
