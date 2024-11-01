@@ -69,7 +69,7 @@
     <div class="container position-relative text-white">
         <h1 class="display-4 fw-bold">ISA Laboratorios</h1>
         <p class="lead">Innovación y confianza en el cuidado de tu salud</p>
-        <a href="#productos-novedad" class="btn btn-primary mt-3">Ver Novedades</a>
+        <a href="#productos-novedad" class="btn btn-primary mt-3 ver-novedades">Ver Novedades</a>
     </div>
 
 
@@ -80,7 +80,7 @@
 <section class="container py-5" id="sobre-nosotros">
     <div class="row">
         <div class="col-lg-6">
-            <img src="./multimedia/logo1.png" alt="Laboratorio" class="img-fluid rounded">
+            <img src="./multimedia/logo1.png" alt="Laboratorio" class="img-fluid rounded wow animate__animated animate__bounceInLeft">
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-center">
             <h2>¿Quiénes Somos?</h2>
@@ -120,47 +120,85 @@
     </div>
 </section>
 
-<!-- Sección de Productos Destacados (Novedades) -->
-<section class="container py-5" id="productos-novedad">
-    <h2 class="text-center">Novedades</h2>
-    <div class="row mt-4">
-        <div class="col-md-6">
-            <div class="card card-product">
-                <img src="./multimedia/diaD-novedad.png" class="card-img-top" alt="Producto 1">
-                <div class="card-body">
-                    <h5 class="card-title">Dia D | Suplemento vitamina D</h5>
-                    <p class="card-text">Aumenta tus niveles de vitamina D con nuestra fórmula comprobada y de alta calidad.</p>
-                    <a href="#" class="btn btn-primary">Más información</a>
+<!-- Separador Superior -->
+<div class="section-separator"></div>
+
+<!-- Sección de Productos Destacados (Novedades) en Carrusel -->
+<section class="py-3 text-white position-relative" id="productos-novedad">
+    <div id="novedadesCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active" style="background-image: url('./multimedia/fondo-Diad.png'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 50vh;">
+                <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-2" style="height: 100%;">
+                    <div class="col-12 col-md-5 text-center">
+                        <img src="./multimedia/diaD-novedad.png" alt="Producto 1" class="img-fluid animate-zoom" style="max-height: 250px;">
+                    </div>
+                    <div class="col-12 col-md-6 text-center text-md-start">
+                        <h3>Dia D | Suplemento vitamina D</h3>
+                        <p>Aumenta tus niveles de vitamina D con nuestra fórmula comprobada y de alta calidad.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-6">
-            <div class="card card-product">
-                <img src="./multimedia/bn-novedad.png" class="card-img-top" alt="Producto 2">
-                <div class="card-body">
-                    <h5 class="card-title">Buenas Noches</h5>
-                    <p class="card-text">Medicamento Inductor Del Sueño - Despertá renovado cada mañana con BUENAS NOCHES, la dosis óptima de melatonina para un sueño reparador.</p>
-                    <a href="#" class="btn btn-primary">Más información</a>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item" style="background-image: url('./multimedia/fondo-BuenasNoches.png'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 50vh;">
+                <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-2" style="height: 100%;">
+                    <div class="col-12 col-md-5 text-center">
+                        <img src="./multimedia/bn-novedad.png" alt="Producto 2" class="img-fluid animate-zoom" style="max-height: 250px;">
+                    </div>
+                    <div class="col-12 col-md-6 text-center text-md-start">
+                        <h3>Buenas Noches</h3>
+                        <p>Medicamento Inductor Del Sueño - Despertá renovado cada mañana con BUENAS NOCHES, la dosis óptima de melatonina para un sueño reparador.</p>
+                    </div>
                 </div>
             </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item" style="background-image: url('./multimedia/fondo-Veg12.png'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 50vh;">
+                <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-2" style="height: 100%;">
+                    <div class="col-12 col-md-5 text-center">
+                        <img src="./multimedia/veg12-novedad.png" alt="Producto 3" class="img-fluid animate-zoom" style="max-height: 250px;">
+                    </div>
+                    <div class="col-12 col-md-6 text-center text-md-start">
+                        <h3>Veg12 | Suplemento vitamina B12</h3>
+                        <p>Aumenta tus niveles de vitamina B12 con nuestra fórmula comprobada y de alta calidad.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+        <!-- Controles del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#novedadesCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#novedadesCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
     </div>
 </section>
+
+<!-- Separador Inferior -->
+<div class="section-separator"></div>
+
 
 
 <!-- Sección de Testimonios -->
 <section class="bg-light py-5">
     <div class="container text-center">
-        <h2>Testimonios</h2>
+        <h2>Por qué nos eligen</h2>
         <div id="testimonios-carousel" class="carousel slide mt-4" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <p class="lead">"ISA Laboratorios me ayudó a mejorar mi calidad de vida."</p>
-                    <p><strong>- Cliente Satisfecho</strong></p>
+                    <p><strong>- Laura González</strong></p>
                 </div>
                 <div class="carousel-item">
-                    <p class="lead">"Confío en sus productos para cuidar mi salud y la de mi familia."</p>
-                    <p><strong>- Profesional de la Salud</strong></p>
+                    <p class="lead">"Confío en sus productos para cuidar la salud de mis pacientes."</p>
+                    <p><strong>- Lic Yamila Palloni</strong></p>
                 </div>
                 <!-- Más testimonios si es necesario -->
             </div>
@@ -190,7 +228,9 @@
                 </div>
                 </div>
         </div>
+        
         <div class="col-md-6">
+        <div class="wow animate__animated animate__fadeInRight">
             <h4>Contáctanos</h4>
             <p>Dirección: Avda. Juan B. Alberdi Nº 5862
                 Piso 3 – Dto. D (1440 CUX.) C.A.B.A. Argentina</p>
@@ -201,6 +241,7 @@
             <h4>Recursos Humanos</h4>
             <p>Dejanos tu C.V.</p>
             <p>Email: rrhh@isalaboratorios.com.ar</p>
+        </div>
         </div>
     </div>
 </section>
