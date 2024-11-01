@@ -23,28 +23,10 @@
 </head>
 <body>
 <header>
-    <style>
-        /* Agrega tus estilos personalizados aquí */
-        .hero-section {
-            background: url(./multimedia/index1-carusel1.png) no-repeat center center;
-            background-size: cover;
-            padding: 100px 0;
-        }
-        .card-product {
-            transition: transform 0.3s ease;
-        }
-        .card-product:hover {
-            transform: scale(1.05);
-        }
-        .highlight {
-            color: #0080ff; /* Color de marca */
-        }
-    </style>
-
         <!--nav bar inicio-->
         <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./multimedia/logo1.png" alt="Pan&Cia" class="mx-auto d-block"
+            <a class="navbar-brand" href="#"><img src="./multimedia/logo.navbar.png" alt="Pan&Cia" class="mx-auto d-block"
                 style="width:30%"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -90,8 +72,7 @@
         <a href="#productos-novedad" class="btn btn-primary mt-3">Ver Novedades</a>
     </div>
 
-    <!-- Overlay opcional para mejorar la legibilidad del texto -->
-    <div class="overlay position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.5);"></div>
+
 </section>
 
 
@@ -99,7 +80,7 @@
 <section class="container py-5" id="sobre-nosotros">
     <div class="row">
         <div class="col-lg-6">
-            <img src="ruta-a-imagen-laboratorio.jpg" alt="Laboratorio" class="img-fluid rounded">
+            <img src="./multimedia/logo1.png" alt="Laboratorio" class="img-fluid rounded">
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-center">
             <h2>¿Quiénes Somos?</h2>
@@ -110,27 +91,28 @@
 </section>
 
 <!-- Sección de Beneficios -->
-<section class="bg-light py-5">
+<section class="bg-light py-5 beneficios">
     <div class="container text-center">
-        <h2>Nuestros Beneficios</h2>
+        <!-- <h2>Nuestros Beneficios</h2> -->
         <div class="row mt-4">
             <div class="col-md-3">
-                <i class="bi bi-shield-check display-5"></i>
+                <!-- Imagen en lugar de ícono -->
+                <img src="./multimedia/calidad-certificada.png" alt="Calidad Certificada" class="img-fluid mb-3" style="width: 50px;">
                 <h4>Calidad Certificada</h4>
                 <p>Productos sometidos a rigurosos controles de calidad.</p>
             </div>
             <div class="col-md-3">
-                <i class="bi bi-flask display-5"></i>
+                <img src="./multimedia/innovacion-cientifica.png" alt="Innovación Científica" class="img-fluid mb-3" style="width: 50px;">
                 <h4>Innovación Científica</h4>
                 <p>Fórmulas avanzadas desarrolladas por expertos.</p>
             </div>
             <div class="col-md-3">
-                <i class="bi bi-heart display-5"></i>
+                <img src="./multimedia/compromiso-salud.png" alt="Compromiso con la Salud" class="img-fluid mb-3" style="width: 50px;">
                 <h4>Compromiso con la Salud</h4>
                 <p>Productos que respaldan tu bienestar.</p>
             </div>
             <div class="col-md-3">
-                <i class="bi bi-people display-5"></i>
+                <img src="./multimedia/apoyo-comunidad.png" alt="Apoyo a la Comunidad" class="img-fluid mb-3" style="width: 50px;">
                 <h4>Apoyo a la Comunidad</h4>
                 <p>Impulsamos la salud pública y el bienestar.</p>
             </div>
@@ -144,20 +126,20 @@
     <div class="row mt-4">
         <div class="col-md-6">
             <div class="card card-product">
-                <img src="ruta-a-imagen-producto1.jpg" class="card-img-top" alt="Producto 1">
+                <img src="./multimedia/diaD-novedad.png" class="card-img-top" alt="Producto 1">
                 <div class="card-body">
-                    <h5 class="card-title">Producto Novedad 1</h5>
-                    <p class="card-text">Descripción breve del producto destacando sus beneficios y propiedades.</p>
+                    <h5 class="card-title">Dia D | Suplemento vitamina D</h5>
+                    <p class="card-text">Aumenta tus niveles de vitamina D con nuestra fórmula comprobada y de alta calidad.</p>
                     <a href="#" class="btn btn-primary">Más información</a>
                 </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="card card-product">
-                <img src="ruta-a-imagen-producto2.jpg" class="card-img-top" alt="Producto 2">
+                <img src="./multimedia/bn-novedad.png" class="card-img-top" alt="Producto 2">
                 <div class="card-body">
-                    <h5 class="card-title">Producto Novedad 2</h5>
-                    <p class="card-text">Descripción breve del producto destacando sus beneficios y propiedades.</p>
+                    <h5 class="card-title">Buenas Noches</h5>
+                    <p class="card-text">Medicamento Inductor Del Sueño - Despertá renovado cada mañana con BUENAS NOCHES, la dosis óptima de melatonina para un sueño reparador.</p>
                     <a href="#" class="btn btn-primary">Más información</a>
                 </div>
             </div>
@@ -210,7 +192,6 @@
         </div>
         <div class="col-md-6">
             <h4>Contáctanos</h4>
-            <h4>ISA Laboratorios</h4>
             <p>Dirección: Avda. Juan B. Alberdi Nº 5862
                 Piso 3 – Dto. D (1440 CUX.) C.A.B.A. Argentina</p>
             <p>Email: info@isalaboratorios.com.ar</p>
