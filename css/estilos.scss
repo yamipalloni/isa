@@ -44,7 +44,7 @@ html{
 .navbar{
     background-color: $color5;
     font-family: $font1;
-    font-size: calc($size3 - 1px);
+    font-size: calc($size3 - 1.5px);
         a{
         color: $color6 !important;
     }
@@ -63,7 +63,6 @@ html{
 //** index **//
 
 .hero-section {
-    background: url(./multimedia/index1-carusel1.png) no-repeat center center;
     background-size: cover;
     padding: 100px 0;
 }
@@ -84,7 +83,15 @@ html{
     color: $color5 !important;
 }
 
+.display-4-index{
+    font-family: $font1;
+    font-size: $size4;
+}
 
+.lead-index{
+    font-family: $font1;
+    font-size: $size3;
+}
 
 //** Sección de la Marca//** 
 
@@ -92,6 +99,29 @@ html{
     color: $color5;
 }
 
+#sobre-nosotros{
+        font-family: $font1;
+}
+
+#sobre-nosotros{
+    p{
+        font-size: calc($size3 - 2px);
+    }
+}
+
+//** Beneficios //** 
+
+.beneficios{
+    h4{
+        font-family: $font1;
+    }
+}
+
+.beneficios{
+    p{
+        font-family: $font2;
+    }
+}
 
 //** Novedades //** 
 
@@ -99,6 +129,20 @@ html{
     margin: 0;
     padding: 0;
 }
+
+
+#productos-novedad{
+    h3{
+    font-family: $font1;
+    font-size: calc($size4 - 8px);}
+}
+
+#productos-novedad{
+    p{
+    font-family: $font2;
+font-size: $size3;}
+}
+
 
 .carousel-item {
     position: relative;
@@ -129,9 +173,86 @@ html{
     padding: 0;
 }
 
+//** Testimonios **//
+
+.container-testimonios{
+    h2{
+        font-family: $font1;
+    }
+}
+
+.container-testimonios{
+    p{
+        font-family: $font1;
+    }
+}
+
+//** Contacto **//
+.container-contacto{
+    h4{
+        font-family: $font1;
+    }
+}
+
+.container-contacto{
+    p{
+        font-family: $font2;
+    }
+}
+
+//** Productos **//
+
+   /* Estilo para el zoom in suave en la imagen */
+@keyframes zoomEffect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.zoom-image-productos {
+    animation: zoomEffect 5s ease-in-out infinite; /* Animación continua de 5 segundos */
+}
 
 
+/* En versiones móviles, ajustamos el layout */
+@media (max-width: 767px) {
+    .hero-section-productos {
+        background-image: none; /* Elimina la imagen de fondo en móviles */
+    }
+    
+    .hero-section-productos .row {
+        flex-direction: column-reverse; /* Cambia el orden de los elementos */
+    }
+    
+    .hero-section-productos .col-md-6:first-child {
+        order: 2; /* El texto irá debajo de la imagen */
+    }
+    
+    .hero-section-productos .col-md-6:last-child {
+        order: 1; /* La imagen irá arriba */
+        height: 300px; /* Ajusta la altura en móviles */
+        background-image: url('../multimedia/imagenLateral.png'); /* Establece la imagen como fondo en móviles */
+        background-size: cover;
+        background-position: center;
+    }
+}
 
+
+.display-4-productos{
+    font-family: $font1;
+    color: $color5;
+}
+
+.lead-productos{
+    font-family: $font1;
+    color: $color5;
+}
 
 
 //** Cierre página **//

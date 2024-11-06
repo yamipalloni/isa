@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Petrona:ital,wght@0,100..900;1,100..900&display=swap");
 * {
@@ -13,7 +14,7 @@ html {
 .navbar {
   background-color: #2A3F92;
   font-family: "Roboto", serif;
-  font-size: 19px;
+  font-size: 18.5px;
 }
 .navbar a {
   color: #ffffff !important;
@@ -30,7 +31,6 @@ html {
 }
 
 .hero-section {
-  background: url(./multimedia/index1-carusel1.png) no-repeat center center;
   background-size: cover;
   padding: 100px 0;
 }
@@ -53,13 +53,49 @@ html {
   color: #2A3F92 !important;
 }
 
+.display-4-index {
+  font-family: "Roboto", serif;
+  font-size: 50px;
+}
+
+.lead-index {
+  font-family: "Roboto", serif;
+  font-size: 20px;
+}
+
 .highlight {
   color: #2A3F92;
+}
+
+#sobre-nosotros {
+  font-family: "Roboto", serif;
+}
+
+#sobre-nosotros p {
+  font-size: 18px;
+}
+
+.beneficios h4 {
+  font-family: "Roboto", serif;
+}
+
+.beneficios p {
+  font-family: "DM Sans", sans-serif;
 }
 
 #productos-novedad {
   margin: 0;
   padding: 0;
+}
+
+#productos-novedad h3 {
+  font-family: "Roboto", serif;
+  font-size: 42px;
+}
+
+#productos-novedad p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
 }
 
 .carousel-item {
@@ -91,6 +127,67 @@ html {
   background-color: #2A3F92;
   margin: 0;
   padding: 0;
+}
+
+.container-testimonios h2 {
+  font-family: "Roboto", serif;
+}
+
+.container-testimonios p {
+  font-family: "Roboto", serif;
+}
+
+.container-contacto h4 {
+  font-family: "Roboto", serif;
+}
+
+.container-contacto p {
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Estilo para el zoom in suave en la imagen */
+@keyframes zoomEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.zoom-image-productos {
+  animation: zoomEffect 5s ease-in-out infinite; /* Animación continua de 5 segundos */
+}
+
+/* En versiones móviles, ajustamos el layout */
+@media (max-width: 767px) {
+  .hero-section-productos {
+    background-image: none; /* Elimina la imagen de fondo en móviles */
+  }
+  .hero-section-productos .row {
+    flex-direction: column-reverse; /* Cambia el orden de los elementos */
+  }
+  .hero-section-productos .col-md-6:first-child {
+    order: 2; /* El texto irá debajo de la imagen */
+  }
+  .hero-section-productos .col-md-6:last-child {
+    order: 1; /* La imagen irá arriba */
+    height: 300px; /* Ajusta la altura en móviles */
+    background-image: url("../multimedia/imagenLateral.png"); /* Establece la imagen como fondo en móviles */
+    background-size: cover;
+    background-position: center;
+  }
+}
+.display-4-productos {
+  font-family: "Roboto", serif;
+  color: #2A3F92;
+}
+
+.lead-productos {
+  font-family: "Roboto", serif;
+  color: #2A3F92;
 }
 
 footer {
