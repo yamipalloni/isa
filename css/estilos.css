@@ -183,11 +183,13 @@ html {
 .display-4-productos {
   font-family: "Roboto", serif;
   color: #2A3F92;
+  text-align: left;
 }
 
 .lead-productos {
   font-family: "Roboto", serif;
   color: #2A3F92;
+  text-align: left;
 }
 
 footer {
