@@ -30,6 +30,19 @@ html {
   color: #C3C4C6 !important;
 }
 
+@media (max-width: 390px) {
+  .navbar-brand img {
+    width: 20%;
+  }
+  .navbar-brand {
+    flex-grow: 1;
+    text-align: center;
+  }
+  .navbar-toggler {
+    position: relative;
+    margin-left: auto;
+  }
+}
 .hero-section {
   background-size: cover;
   padding: 100px 0;
@@ -98,6 +111,14 @@ html {
   font-size: 20px;
 }
 
+@media (max-width: 390px) {
+  #productos-novedad h3 {
+    font-size: 1.2rem;
+  }
+  #productos-novedad p {
+    font-size: 0.9rem;
+  }
+}
 .carousel-item {
   position: relative;
 }
