@@ -91,61 +91,58 @@
             <h2 class="fw-bold mb-3">Conocé toda nuestra línea</h2>
             <p class="lead mb-5">Contamos con presencia en todas las especialidades médicas, respaldados por estándares internacionales de calidad y seguridad.</p>
         
-                <!-- Productos -->
-                <div class="row justify-content-center">
-                    <div class="col-6 col-md-4 mb-4">
-                        <a href="#" onclick="showCarousel('suplementosDietarios'); return false;">
-                            <div class="division-icon mb-2">
-                                <img src="../multimedia/calidad-certificada.png" alt="Venta Libre" class="img-fluid">
-                            </div>
-                            <h5 class="fw-bold-productos">Suplementos dietarios</h5>
-                            <div class="divider-1 mt-2" style="width: 40px; height: 4px; margin: 0 auto;"></div>
-                        </a>
-                    </div>
-                
-                    <div class="col-6 col-md-4 mb-4">
-                        <a href="#" onclick="showCarousel('ventaLibre'); return false;">
-                            <div class="division-icon mb-2">
-                                <img src="../multimedia/calidad-certificada.png" alt="Cuidados Primarios" class="img-fluid">
-                            </div>
-                            <h5 class="fw-bold-productos">Venta Libre</h5>
-                            <div class="divider-2 mt-2" style="width: 40px; height: 4px; margin: 0 auto;"></div>
-                        </a>
-                    </div>
-                
-                    <div class="col-6 col-md-4 mb-4">
-                        <a href="#" onclick="showCarousel('medicamentos'); return false;">
-                            <div class="division-icon mb-2">
-                                <img src="../multimedia/calidad-certificada.png" alt="Tratamientos Especiales" class="img-fluid">
-                            </div>
-                            <h5 class="fw-bold-productos">Medicamentos</h5>
-                            <div class="divider-3 mt-2" style="width: 40px; height: 4px; margin: 0 auto;"></div>
-                        </a>
-                    </div>
-                </div> 
+            <!-- Productos -->
+            <div class="row justify-content-center">
+                <div class="col-6 col-md-4 mb-4">
+                    <a href="#" onclick="showCarousel('suplementosDietarios'); return false;">
+                        <div class="division-icon mb-2">
+                            <img src="../multimedia/calidad-certificada.png" alt="Venta Libre" class="img-fluid">
+                        </div>
+                        <h5 class="fw-bold-productos">Suplementos dietarios</h5>
+                        <div class="divider-1 mt-2" style="width: 40px; height: 4px; margin: 0 auto;"></div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 mb-4">
+                    <a href="#" onclick="showCarousel('ventaLibre'); return false;">
+                        <div class="division-icon mb-2">
+                            <img src="../multimedia/calidad-certificada.png" alt="Cuidados Primarios" class="img-fluid">
+                        </div>
+                        <h5 class="fw-bold-productos">Venta Libre</h5>
+                        <div class="divider-2 mt-2" style="width: 40px; height: 4px; margin: 0 auto;"></div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 mb-4">
+                    <a href="#" onclick="showCarousel('medicamentos'); return false;">
+                        <div class="division-icon mb-2">
+                            <img src="../multimedia/calidad-certificada.png" alt="Tratamientos Especiales" class="img-fluid">
+                        </div>
+                        <h5 class="fw-bold-productos">Medicamentos</h5>
+                        <div class="divider-3 mt-2" style="width: 40px; height: 4px; margin: 0 auto;"></div>
+                    </a>
+                </div>
+            </div>
         </section>
         
         <!-- Carrusel de productos -->
-<!-- Sección de carrusel con fondo gris de ancho completo -->
-<section class="bg-gray-carrusel w-100 py-4">
-    <div class="container mt-4" id="productosCarousel" style="display: none; background-color: transparent;">
-        <div id="productosCarouselInner" class="carousel slide" data-bs-ride="carousel" style="background-color: transparent;">
-            <div class="carousel-inner" id="carouselItems" style="background-color: transparent;">
-                <!-- Items del carrusel generados por JavaScript -->
+        <section class="bg-gray-carrusel w-100 py-4 overflow-hidden">
+            <div class="container mt-4" id="productosCarousel" style="display: none;">
+                <div id="productosCarouselInner" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner-productos" id="carouselItems">
+                        <!-- Items del carrusel generados por JavaScript -->
+                    </div>
+        
+                    <!-- Controles del carrusel -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productosCarouselInner" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productosCarouselInner" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
             </div>
-    
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#productosCarouselInner" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#productosCarouselInner" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-            </button>
-        </div>
-    </div>
-</section>
+        </section>
 
 
 

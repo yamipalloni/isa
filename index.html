@@ -122,7 +122,7 @@
 
 <!-- Sección de Productos Destacados (Novedades) en Carrusel -->
 <section class="py-3 text-white position-relative" id="productos-novedad">
-    <div id="novedadesCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div id="novedadesCarousel" class="carousel slide carousel-novedades" data-bs-ride="carousel">
         <div class="carousel-inner">
 
             <!-- Slide 1 -->
@@ -187,7 +187,7 @@
 <section class="bg-light py-5">
     <div class="container-testimonios text-center">
         <h2>Por qué nos eligen</h2>
-        <div id="testimonios-carousel" class="carousel slide mt-4" data-bs-ride="carousel">
+        <div id="testimonios-carousel" class="carousel slide carousel-testimonios mt-4" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <p class="lead">"ISA Laboratorios me ayudó a mejorar mi calidad de vida."</p>
@@ -200,11 +200,11 @@
                 <!-- Más testimonios si es necesario -->
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="carousel-control-prev-icon-testimonios" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="carousel-control-next-icon-testimonios" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
@@ -276,5 +276,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>
+
+    <!-- inicia sript de productos -->
+    <script src="carrusel.productos.js"></script>
 </body>
 </html>

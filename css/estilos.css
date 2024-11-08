@@ -99,18 +99,25 @@ html {
 #productos-novedad {
   margin: 0;
   padding: 0;
+  /* Punto de corte para tablets y dispositivos medianos */
+  /* Punto de corte específico para dispositivos móviles pequeños */
 }
-
 #productos-novedad h3 {
   font-family: "Roboto", serif;
-  font-size: 42px;
+  font-size: calc(50px - 8px);
 }
-
 #productos-novedad p {
   font-family: "DM Sans", sans-serif;
   font-size: 20px;
 }
-
+@media (max-width: 768px) {
+  #productos-novedad h3 {
+    font-size: 1.4rem; /* Ajusta el tamaño para tablets */
+  }
+  #productos-novedad p {
+    font-size: 1rem; /* Ajusta el tamaño para tablets */
+  }
+}
 @media (max-width: 390px) {
   #productos-novedad h3 {
     font-size: 1.2rem;
@@ -119,11 +126,12 @@ html {
     font-size: 0.9rem;
   }
 }
-.carousel-item {
+
+.carousel-novedades .carousel-item {
   position: relative;
 }
 
-.carousel-item .container {
+.carousel-novedades .carousel-item .container {
   position: relative;
   z-index: 2;
 }
@@ -244,11 +252,11 @@ html {
   color: #2A3F92;
 }
 
-.carousel-item {
+#productosCarousel .carousel-item {
   padding: 1.5rem;
 }
 
-.carousel-item img {
+#productosCarousel .carousel-item img {
   max-height: 200px;
   margin-bottom: 1rem;
 }
@@ -257,25 +265,26 @@ html {
   background-image: url("../multimedia/fondo.CarruselProductos.png");
   background-size: cover;
   background-position: center;
+  padding-bottom: 40px;
+  overflow: hidden;
 }
 
-#productosCarousel .carousel-inner {
+#productosCarousel .carousel-inner-productos {
   background-color: transparent;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: #2A3F92; /* Cambia esto al tono de azul que prefieras */
-  border-radius: 50%; /* Hace que los controles sean redondos */
-  width: 30px; /* Ajusta el tamaño según lo que necesites */
+#productosCarousel .carousel-control-prev-icon,
+#productosCarousel .carousel-control-next-icon {
+  background-color: #2A3F92;
+  border-radius: 50%;
+  width: 30px;
   height: 30px;
 }
 
-/* Para cambiar el color del icono interno en SVG (la flecha) */
-.carousel-control-prev-icon::after,
-.carousel-control-next-icon::after {
-  color: white; /* Cambia esto al color que prefieras */
-  font-size: 10px; /* Ajusta el tamaño del ícono */
+#productosCarousel .carousel-control-prev-icon::after,
+#productosCarousel .carousel-control-next-icon::after {
+  color: white;
+  font-size: 10px;
 }
 
 footer {

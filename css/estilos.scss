@@ -139,41 +139,50 @@ html{
 
 //** index **// //** Novedades //** 
 
-#productos-novedad{
+#productos-novedad {
     margin: 0;
     padding: 0;
-}
 
-
-#productos-novedad{
-    h3{
-    font-family: $font1;
-    font-size: calc($size4 - 8px);}
-}
-
-#productos-novedad{
-    p{
-    font-family: $font2;
-font-size: $size3;}
-}
-
-@media (max-width: 390px) {
-    #productos-novedad h3 {
-        font-size: 1.2rem;
+    h3 {
+        font-family: $font1;
+        font-size: calc(#{$size4} - 8px);
     }
-    #productos-novedad p {
-        font-size: 0.9rem;
+
+    p {
+        font-family: $font2;
+        font-size: $size3;
+    }
+
+    /* Punto de corte para tablets y dispositivos medianos */
+    @media (max-width: 768px) {
+        h3 {
+            font-size: 1.4rem; /* Ajusta el tamaño para tablets */
+        }
+        p {
+            font-size: 1rem; /* Ajusta el tamaño para tablets */
+        }
+    }
+
+    /* Punto de corte específico para dispositivos móviles pequeños */
+    @media (max-width: 390px) {
+        h3 {
+            font-size: 1.2rem;
+        }
+        p {
+            font-size: 0.9rem;
+        }
     }
 }
 
-.carousel-item {
+.carousel-novedades .carousel-item {
     position: relative;
 }
 
-.carousel-item .container {
+.carousel-novedades .carousel-item .container {
     position: relative;
     z-index: 2;
 }
+
 .animate-zoom {
     animation: zoomIn 3s infinite alternate;
 }
@@ -313,11 +322,11 @@ font-size: $size3;}
     color: $color5;
 }
 
-.carousel-item {
+#productosCarousel .carousel-item {
     padding: 1.5rem;
 }
 
-.carousel-item img {
+#productosCarousel .carousel-item img {
     max-height: 200px;
     margin-bottom: 1rem;
 }
@@ -326,25 +335,26 @@ font-size: $size3;}
     background-image: url('../multimedia/fondo.CarruselProductos.png');
     background-size: cover;
     background-position: center;
+    padding-bottom: 40px; // Ajuste adicional para evitar el solapamiento con el footer
+    overflow: hidden;
 }
 
-#productosCarousel .carousel-inner {
+#productosCarousel .carousel-inner-productos {
     background-color: transparent;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: $color5; /* Cambia esto al tono de azul que prefieras */
-    border-radius: 50%; /* Hace que los controles sean redondos */
-    width: 30px; /* Ajusta el tamaño según lo que necesites */
+#productosCarousel .carousel-control-prev-icon,
+#productosCarousel .carousel-control-next-icon {
+    background-color: $color5;
+    border-radius: 50%;
+    width: 30px;
     height: 30px;
 }
 
-/* Para cambiar el color del icono interno en SVG (la flecha) */
-.carousel-control-prev-icon::after,
-.carousel-control-next-icon::after {
-    color: white; /* Cambia esto al color que prefieras */
-    font-size: 10px; /* Ajusta el tamaño del ícono */
+#productosCarousel .carousel-control-prev-icon::after,
+#productosCarousel .carousel-control-next-icon::after {
+    color: white;
+    font-size: 10px;
 }
 
 
