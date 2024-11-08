@@ -32,13 +32,19 @@ const productos = {
 
 
 // Función para mostrar el carrusel según la categoría seleccionada
+// Variable para almacenar la categoría actual
+let currentCategory = null;
+
+// Función para mostrar el carrusel según la categoría seleccionada
 function showCarousel(category) {
+    currentCategory = category; // Almacenar la categoría actual
     const carouselItems = document.getElementById('carouselItems');
     carouselItems.innerHTML = ''; // Limpiar items anteriores
 
-    // Dividir productos en grupos de 4 para Desktop o 2 para Mobile
     const products = productos[category];
-    for (let i = 0; i < products.length; i += 4) {
+    const productsPerRow = window.innerWidth < 768 ? 2 : 4; // 2 productos para móviles, 4 para escritorio
+
+    for (let i = 0; i < products.length; i += productsPerRow) {
         const item = document.createElement('div');
         item.classList.add('carousel-item');
         if (i === 0) item.classList.add('active'); // Activo solo para el primer item
@@ -47,8 +53,8 @@ function showCarousel(category) {
         const row = document.createElement('div');
         row.classList.add('row', 'justify-content-center');
 
-        // Agregar 4 productos en Desktop o 2 en Mobile
-        for (let j = i; j < i + 4 && j < products.length; j++) {
+        // Agregar productos en la fila según el tamaño de la pantalla
+        for (let j = i; j < i + productsPerRow && j < products.length; j++) {
             const product = products[j];
             const col = document.createElement('div');
             col.classList.add('col-6', 'col-md-3', 'text-center'); // 6 col (2 por fila en mobile), 3 col (4 por fila en desktop)
@@ -67,3 +73,10 @@ function showCarousel(category) {
 
     document.getElementById('productosCarousel').style.display = 'block'; // Mostrar el carrusel
 }
+
+// Evento para actualizar el carrusel al cambiar el tamaño de la pantalla
+window.addEventListener('resize', () => {
+    if (currentCategory) {
+        showCarousel(currentCategory); // Actualizar el carrusel con la categoría actual
+    }
+});
