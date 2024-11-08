@@ -213,6 +213,71 @@ html {
   text-align: left;
 }
 
+.fw-bold-productos {
+  font-family: "Roboto", serif;
+  text-decoration: none;
+  color: #2A3F92;
+}
+
+.row a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.divider-1 {
+  background-color: #2295D3;
+}
+
+.divider-2 {
+  background-color: #2295D3;
+}
+
+.divider-3 {
+  background-color: #2295D3;
+}
+
+#productosCarousel h5 {
+  color: #2A3F92;
+}
+
+#productosCarousel p {
+  color: #2A3F92;
+}
+
+.carousel-item {
+  padding: 1.5rem;
+}
+
+.carousel-item img {
+  max-height: 200px;
+  margin-bottom: 1rem;
+}
+
+.bg-gray-carrusel {
+  background-image: url("../multimedia/fondo.CarruselProductos.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#productosCarousel .carousel-inner {
+  background-color: transparent;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #2A3F92; /* Cambia esto al tono de azul que prefieras */
+  border-radius: 50%; /* Hace que los controles sean redondos */
+  width: 30px; /* Ajusta el tamaño según lo que necesites */
+  height: 30px;
+}
+
+/* Para cambiar el color del icono interno en SVG (la flecha) */
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+  color: white; /* Cambia esto al color que prefieras */
+  font-size: 10px; /* Ajusta el tamaño del ícono */
+}
+
 footer {
   background-color: #2A3F92;
   color: #2295D3;

@@ -107,7 +107,7 @@ html{
     font-size: $size3;
 }
 
-//** Sección de la Marca//** 
+//** index **// //** Sección de la Marca//** 
 
 .highlight {
     color: $color5;
@@ -123,7 +123,7 @@ html{
     }
 }
 
-//** Beneficios //** 
+//** index **// //** Beneficios //** 
 
 .beneficios{
     h4{
@@ -137,7 +137,7 @@ html{
     }
 }
 
-//** Novedades //** 
+//** index **// //** Novedades //** 
 
 #productos-novedad{
     margin: 0;
@@ -195,7 +195,7 @@ font-size: $size3;}
     padding: 0;
 }
 
-//** Testimonios **//
+//** index **// //** Testimonios **//
 
 .container-testimonios{
     h2{
@@ -209,7 +209,7 @@ font-size: $size3;}
     }
 }
 
-//** Contacto **//
+//** index **// //** Contacto **//
 .container-contacto{
     h4{
         font-family: $font1;
@@ -224,6 +224,7 @@ font-size: $size3;}
 
 //** Productos **//
 
+//** Productos **// Portada
    /* Estilo para el zoom in suave en la imagen */
 @keyframes zoomEffect {
     0% {
@@ -266,6 +267,7 @@ font-size: $size3;}
 }
 
 
+//** Productos **// Categorías
 .display-4-productos{
     font-family: $font1;
     color: $color5;
@@ -277,6 +279,75 @@ font-size: $size3;}
     color: $color5;
     text-align: left;
 }
+
+.fw-bold-productos{
+    font-family: $font1;
+    text-decoration: none;
+    color: $color5;
+}
+
+.row a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.divider-1{
+    background-color: $color4;
+}
+
+.divider-2{
+    background-color: $color4;
+}
+
+.divider-3{
+    background-color: $color4;
+}
+
+//** Productos **// Carrusel
+
+#productosCarousel h5 {
+    color: $color5;
+}
+
+#productosCarousel p {
+    color: $color5;
+}
+
+.carousel-item {
+    padding: 1.5rem;
+}
+
+.carousel-item img {
+    max-height: 200px;
+    margin-bottom: 1rem;
+}
+
+.bg-gray-carrusel {
+    background-image: url('../multimedia/fondo.CarruselProductos.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#productosCarousel .carousel-inner {
+    background-color: transparent;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: $color5; /* Cambia esto al tono de azul que prefieras */
+    border-radius: 50%; /* Hace que los controles sean redondos */
+    width: 30px; /* Ajusta el tamaño según lo que necesites */
+    height: 30px;
+}
+
+/* Para cambiar el color del icono interno en SVG (la flecha) */
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+    color: white; /* Cambia esto al color que prefieras */
+    font-size: 10px; /* Ajusta el tamaño del ícono */
+}
+
+
 
 
 //** Cierre página **//
