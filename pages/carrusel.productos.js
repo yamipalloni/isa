@@ -30,8 +30,6 @@ const productos = {
     ]
 };
 
-
-// Función para mostrar el carrusel según la categoría seleccionada
 // Variable para almacenar la categoría actual
 let currentCategory = null;
 
@@ -59,10 +57,13 @@ function showCarousel(category) {
             const col = document.createElement('div');
             col.classList.add('col-6', 'col-md-3', 'text-center'); // 6 col (2 por fila en mobile), 3 col (4 por fila en desktop)
 
+            // Agregar el enlace para redirigir al detalle del producto
             col.innerHTML = `
-                <img src="${product.img}" alt="${product.title}" class="img-fluid">
-                <h5 class="mt-2">${product.title}</h5>
-                <p>${product.desc}</p>
+                <a href="producto.html?category=${category}&index=${j}">
+                    <img src="${product.img}" alt="${product.title}" class="img-fluid">
+                    <h5 class="mt-2">${product.title}</h5>
+                    <p>${product.desc}</p>
+                </a>
             `;
             row.appendChild(col);
         }
@@ -74,9 +75,40 @@ function showCarousel(category) {
     document.getElementById('productosCarousel').style.display = 'block'; // Mostrar el carrusel
 }
 
+
 // Evento para actualizar el carrusel al cambiar el tamaño de la pantalla
 window.addEventListener('resize', () => {
     if (currentCategory) {
         showCarousel(currentCategory); // Actualizar el carrusel con la categoría actual
     }
 });
+
+// Descripción de cada producto
+// Obtener parámetros de la URL
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get('category');
+const index = urlParams.get('index');
+
+// Verificar si los parámetros están presentes antes de intentar acceder a los productos
+if (category && index !== null && productos[category] && productos[category][parseInt(index, 10)]) {
+    const product = productos[category][parseInt(index, 10)];
+
+    // Mostrar datos en la página
+    document.getElementById('productTitle').innerText = product.title;
+    document.getElementById('productDescription').innerText = product.desc;
+    document.getElementById('productImage').src = product.img;
+
+    // Ejemplo de características (podrías reemplazar esto con datos reales)
+    const productFeatures = document.getElementById('productFeatures');
+    productFeatures.innerHTML = `
+        <tr>
+            <td>Valor 1</td>
+            <td>Valor 2</td>
+            <td>Valor 3</td>
+        </tr>
+    `;
+} else if (category || index !== null) {
+    // Solo mostrar el mensaje si se intenta acceder a un producto con parámetros incorrectos
+    alert('Producto no encontrado');
+}
+
