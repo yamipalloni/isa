@@ -15,9 +15,17 @@ html {
   background-color: #2A3F92;
   font-family: "Roboto", serif;
   font-size: 18.5px;
+  display: flex;
+  justify-content: space-between; /* Distribuye logo e ícono a los extremos */
+  align-items: center;
 }
-.navbar a {
-  color: #ffffff !important;
+
+.navbar-brand img {
+  width: 15%;
+}
+
+.navbar-toggler {
+  margin-left: auto; /* Esto se elimina en la versión móvil */
 }
 
 .nav-list {
@@ -26,21 +34,31 @@ html {
   list-style: none;
 }
 
+.nav-link {
+  color: #ffffff !important;
+}
+
 .nav-link:hover {
   color: #C3C4C6 !important;
 }
 
+/* Ajustes para pantallas pequeñas */
 @media (max-width: 390px) {
   .navbar-brand img {
     width: 20%;
   }
+  .navbar {
+    flex-direction: row; /* Mantiene los elementos en una línea */
+  }
   .navbar-brand {
-    flex-grow: 1;
-    text-align: center;
+    order: 1; /* Logo a la izquierda */
   }
   .navbar-toggler {
-    position: relative;
-    margin-left: auto;
+    order: 2; /* Menú a la derecha */
+    margin-left: 0;
+  }
+  .collapse {
+    width: 100%;
   }
 }
 .hero-section {
@@ -193,20 +211,29 @@ html {
 /* En versiones móviles, ajustamos el layout */
 @media (max-width: 767px) {
   .hero-section-productos {
-    background-image: none; /* Elimina la imagen de fondo en móviles */
+    background-image: none; /* Elimina cualquier imagen de fondo en móviles */
+    padding: 20px; /* Añade un margen interno */
   }
   .hero-section-productos .row {
     flex-direction: column-reverse; /* Cambia el orden de los elementos */
+    align-items: center; /* Centra los elementos */
+    text-align: center; /* Asegura que el texto esté centrado en móviles */
   }
-  .hero-section-productos .col-md-6:first-child {
-    order: 2; /* El texto irá debajo de la imagen */
+  /* Estilo para el texto */
+  .text-start-productos {
+    margin-bottom: 20px; /* Añade espacio entre el texto y la imagen */
   }
+  /* Imagen lateral ajustada */
+  .zoom-image-productos {
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    height: auto; /* Mantiene las proporciones originales */
+    -o-object-fit: contain;
+       object-fit: contain; /* Evita que la imagen se deforme */
+  }
+  /* Contenedor de la imagen */
   .hero-section-productos .col-md-6:last-child {
-    order: 1; /* La imagen irá arriba */
-    height: 300px; /* Ajusta la altura en móviles */
-    background-image: url("../multimedia/imagenLateral.png"); /* Establece la imagen como fondo en móviles */
-    background-size: cover;
-    background-position: center;
+    padding: 0; /* Elimina relleno adicional */
+    width: 100%; /* Asegura que ocupe el ancho completo */
   }
 }
 .display-4-productos {
@@ -242,6 +269,24 @@ html {
 
 .divider-3 {
   background-color: #2295D3;
+}
+
+.division-icon {
+  position: relative;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  transform: scale(1);
+}
+.division-icon img {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+}
+.division-icon:hover {
+  box-shadow: 0 8px 20px rgba(0, 183, 255, 0.6);
+  transform: scale(1.03);
+  border: 2px solid #2295D3 0, 183, 255, 0.8;
 }
 
 #productosCarousel h5 {

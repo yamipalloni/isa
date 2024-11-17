@@ -2,31 +2,32 @@
 // Productos para cada categoría
 const productos = {
     suplementosDietarios: [
-        { img: '../multimedia/diaD-novedad.png', title: 'Producto 1', desc: 'Descripción breve del producto 1.' },
-        { img: '../multimedia/diaD-novedad.png', title: 'Producto 2', desc: 'Descripción breve del producto 2.' },
-        { img: '../multimedia/diaD-novedad.png', title: 'Producto 1', desc: 'Descripción breve del producto 1.' },
-        { img: '../multimedia/diaD-novedad.png', title: 'Producto 2', desc: 'Descripción breve del producto 2.' },
-        { img: '../multimedia/diaD-novedad.png', title: 'Producto 1', desc: 'Descripción breve del producto 1.' },
-        { img: '../multimedia/diaD-novedad.png', title: 'Producto 2', desc: 'Descripción breve del producto 2.' },
-        // Añadir más productos según sea necesario
+        { img: '../multimedia/cartiflex.png', title: 'Cartfiflex', desc: 'Articulaciones, huesos y músculos' },
+        { img: '../multimedia/mas50.png', title: '+50', desc: 'Formulado especialmente para gente adulta' },
+        { img: '../multimedia/diaD.png', title: 'Día D', desc: 'Suplemento dietario a base de Vitamina D' },
+        { img: '../multimedia/herbaccionGinkgoForte.png', title: 'Herbacción Ginkgo Forte', desc: 'Cansancio y Fatiga Mental' },
+        { img: '../multimedia/herbaccionMemory.png', title: 'Herbacción Memory', desc: 'Fatiga mental' },
+        { img: '../multimedia/herbaccionVigor.png', title: 'Herbacción Vigor', desc: 'Estados de desgano y fatiga muscular' },
+        { img: '../multimedia/stopHungry.png', title: 'Stop Hungry', desc: 'Ayuno intermitente - Dietas hipocalóricas' },
+        { img: '../multimedia/veg12.png', title: 'Veg 12', desc: 'Suplemento dietario a base de Vitamina B12' },
+        { img: '../multimedia/vitaminaC1.png', title: 'Vitamina C', desc: 'Suplemento dietario a base de Vitamina C' },
+        { img: '../multimedia/zentroComprimidos.png', title: 'Zentro Max', desc: 'Multivitaminas - Polimineral' },
+        { img: '../multimedia/zentroSobres.png', title: 'Zentro Max Sobres', desc: 'Multivitaminas - Polimineral' },
     ],
     ventaLibre: [
-        { img: '../multimedia/veg12-novedad.png', title: 'Producto 1', desc: 'Descripción breve del producto 1.' },
-        { img: '../multimedia/veg12-novedad.png', title: 'Producto 2', desc: 'Descripción breve del producto 2.' },
-        { img: '../multimedia/veg12-novedad.png', title: 'Producto 1', desc: 'Descripción breve del producto 1.' },
-        { img: '../multimedia/veg12-novedad.png', title: 'Producto 2', desc: 'Descripción breve del producto 2.' },
-        { img: '../multimedia/veg12-novedad.png', title: 'Producto 1', desc: 'Descripción breve del producto 1.' },
-        { img: '../multimedia/veg12-novedad.png', title: 'Producto 2', desc: 'Descripción breve del producto 2.' },
-        // Añadir más productos según sea necesario
+        { img: '../multimedia/algistop.png', title: 'Algistop', desc: 'Antialérgico' },
+        { img: '../multimedia/buenasNoches.png', title: 'Buenas Noches', desc: 'Inductor del sueño' },
+        { img: '../multimedia/gluco30.png', title: 'Glucocartiflex', desc: 'Antiartrósico' },
+        { img: '../multimedia/herbaccionSedante.png', title: 'Herbacción Sedante', desc: 'Alivio de síntomas de ansiedad' },
+        { img: '../multimedia/paracetamol500mg.png', title: 'Paracetamol ISA 500 mg', desc: 'Analgésico, antifebril, antitusivo y descongestivo' },
+        { img: '../multimedia/paracetamol1g.png', title: 'Paracetamol ISA 1 g', desc: 'Analgésico, antifebril' },
     ],
     medicamentos: [
-        { img: '../multimedia/bn-novedad.png', title: 'Producto 1', desc: 'Descripción breve del producto 1.' },
-        { img: '../multimedia/bn-novedad.png', title: 'Producto 2', desc: 'Descripción breve del producto 2.' },
-        { img: '../multimedia/bn-novedad.png', title: 'Producto 1', desc: 'Descripción breve del producto 1.' },
-        { img: '../multimedia/bn-novedad.png', title: 'Producto 2', desc: 'Descripción breve del producto 2.' },
-        { img: '../multimedia/bn-novedad.png', title: 'Producto 1', desc: 'Descripción breve del producto 1.' },
-        { img: '../multimedia/bn-novedad.png', title: 'Producto 2', desc: 'Descripción breve del producto 2.' },
-        // Añadir más productos según sea necesario
+        { img: '../multimedia/atorvastatina10.png', title: 'Atorvastatina ISA 10 mg', desc: 'Reduce el colesterol' },
+        { img: '../multimedia/atorvastatina20.png', title: 'Atorvastatina ISA 20 mg', desc: 'Reduce el colesterol' },
+        { img: '../multimedia/bn-novedad.png', title: 'Bistronfor', desc: 'Mucolítico de las vías respiratorias' },
+        { img: '../multimedia/4.4.png', title: '4x4 | Sidenafil 50 mg', desc: 'Vasodilatador' },
+        { img: '../multimedia/quartier.png', title: 'Quartier | Tadalafilo 20 mg', desc: 'Tratamiento para la disfunción eréctil' },
     ]
 };
 
