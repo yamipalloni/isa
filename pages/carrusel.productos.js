@@ -6,26 +6,66 @@ const productos = {
             img: '../multimedia/cartiflex.png',
             title: 'Cartiflex',
             desc: 'Articulaciones, huesos y músculos',
-            features: ['Fortalece cartílagos', 'Alivia dolor articular', 'Fácil absorción'],
+            features: ['Magnesio: 188 mg', '(19 - 65 años): 72% (>65 años): 82%','Cartílago de tiburón: 400 mg', '(19 - 65 años): 72% (>65 años): 82%'],
+            featuresColumn: ['Información nutricional por ingesta diaria (2 comprimidos por día)', '% IDR cubierto'], 
+            featuresRow: ['Fórmula A', 'Fórmula B'], 
             textAbove: 'Forma de uso: 2 comprimidos diarios.',
             textAbove2: 'Presentación: 30 y 60 comprimidos.',
-            tabletitleproduct: 'Cada comprimido contiene:',
-            textBelow: '*% Valores diarios con base a una dieta de 2.000 kcal u 8.400 kJ. No aporta cantidades significativas de valor energético, carbohidratos, proteínas, grasas, fibra alimentaria y sodio. IDR: INGESTA DIARIA DE REFERENCIA.',
+            tabletitleproduct: 'Suplemento Dietario con Cartílago de Tiburón y Magnesio',
+            textBelow: '(*)% Valores diarios con base a una dieta de 2.000 kcal u 8.400 kJ. No aporta cantidades significativas de valor energético, carbohidratos, proteínas, grasas, fibra alimentaria y sodio. IDR: INGESTA DIARIA DE REFERENCIA.',
             clarifiedtext: 'Suplemento Dietario. Suplementa dietas insuficientes. Ante cualquier duda consulte a su médico y/o farmacéutico.',
-            prospectoLink: '../prospectos/cartiflex.pdf',
+            prospectoLink: '../multimedia/prospectos/cartiflex.pdf',
         },
         {
             img: '../multimedia/mas50.png',
             title: '+50',
             desc: 'Formulado especialmente para gente adulta',
-            features: ['Vitaminas esenciales', 'Mejora energía', 'Refuerza defensas'],
-            textAbove: 'Un aliado perfecto para una vida activa.',
-            textBelow: 'Consulta siempre a tu médico antes de consumir suplementos.',
-            prospectoLink: '../prospectos/mas50.pdf',
+            features: ['Vitamina B1: 15 mg', '1249% IDR','Vitamina B6: 15 mg', '1154% IDR','Vitamina B12: 1 mg', '% IDR','Zinc: 3 mg', '43% IDR'],
+            featuresColumn: ['Información nutricional por ingesta diaria (1 comprimido por día)', '% IDR cubierto'], 
+            featuresRow: ['Fórmula A', 'Fórmula B', 'Fórmula C', 'Fórmula D'], 
+            textAbove: 'Forma de uso: 1 comprimidos diario.',
+            textAbove2: 'Presentación: 30 comprimidos.',
+            tabletitleproduct: 'Suplemento Dietario con: Vitaminas B1, B6, B12, Zinc, Ginkgo Biloba, Resveratrol, Licopeno y Luteína',
+            textBelow: '(*)% Valores diarios con base a una dieta de 2.000 kcal u 8.400 kj. No aporta cantidades significativas de valor energético, carbohidratos, proteínas, grasas, fibra alimentaria y sodio. Ginkgo Biloba 50, Resveratrol 50, Luteína 2, Licopeno 2.',
+            clarifiedtext: 'Suplemento Dietario. Suplementa dietas insuficientes. Ante cualquier duda consulte a su médico y/o farmacéutico.',
+            prospectoLink: '../multimedia/prospectos/+50.pdf',
         },
-        { img: '../multimedia/diaD.png', title: 'Día D', desc: 'Suplemento dietario a base de Vitamina D' },
-        { img: '../multimedia/herbaccionGinkgoForte.png', title: 'Herbacción Ginkgo Forte', desc: 'Cansancio y Fatiga Mental' },
-        { img: '../multimedia/herbaccionMemory.png', title: 'Herbacción Memory', desc: 'Fatiga mental' },
+        { 
+            img: '../multimedia/diaD.png', title: 'Día D', desc: 'Suplemento dietario a base de Vitamina D',
+            features: ['Vitamina D3 (colecalciferol): 800 U.I.', '(19-50 años): 400%(SUPERA LA IDR)','Vitamina D3 (colecalciferol): 800 U.I.','(51-65 años): 200% (SUPERA LA IDR)','Vitamina D3 (colecalciferol): 800 U.I.', '(>65 años): 133% (SUPERA LA IDR)'],
+            featuresColumn: ['Información nutricional por ingesta diaria (1 comprimido por día)', '% IDR cubierto'],
+            featuresRow: ['Fórmula A', 'Fórmula B', 'Fórmula C'], 
+            textAbove: 'Forma de uso: 1 comprimidos diario.',
+            textAbove2: 'Presentación: 30 comprimidos.',
+            tabletitleproduct: 'Suplemento dietario en comprimidos recubiertos',
+            textBelow: '(*)% Valores diarios con base a una dieta de 2.000 kcal u 8.400 kJ. No aporta cantidades significativas de valor energético, carbohidratos, proteínas, grasas, fibra alimentaria y sodio.',
+            clarifiedtext: 'Suplemento Dietario. Suplementa dietas insuficientes. Ante cualquier duda consulte a su médico y/o farmacéutico.',
+            prospectoLink: '../multimedia/prospectos/dia-d.pdf',
+        },
+        { 
+            img: '../multimedia/herbaccionGinkgoForte.png', title: 'Herbacción Ginkgo Forte', desc: 'Cansancio y Fatiga Mental',
+            features: ['Vitamina B1: 3 mg', '250%(SUPERA LA IDR)','Vitamina B2: 3 mg','231% (SUPERA LA IDR)','Vitamina B6: 3 mg', '(19-50 años): 230% (SUPERA LA IDR) / (> 50 años: 176% (SUPERA LA IDR)'],
+            featuresColumn: ['Información nutricional por ingesta diaria (1 comprimido por día)', '% IDR cubierto'],
+            featuresRow: ['Fórmula A', 'Fórmula B', 'Fórmula C'], 
+            textAbove: 'Forma de uso: 1 comprimidos diario.',
+            textAbove2: 'Presentación: 30 comprimidos.',
+            tabletitleproduct: 'Suplemento Dietario con Ginkgo Biloba 80 mg y vitaminas B1, B2 y B6',
+            textBelow: '(*)% No aporta cantidades significativas de valor energético, carbohidratos, proteínas, grasas, fibra alimentaria y sodio.(*)% Valores diarios con base a una dieta de 2.000 kcal u 8.400 kj.Valores diarios con base a una dieta de 2.000 kcal u 8.400 kJ. No aporta cantidades significativas de valor energético, carbohidratos, proteínas, grasas, fibra alimentaria y sodio.',
+            clarifiedtext: 'Suplemento Dietario. Suplementa dietas insuficientes. Ante cualquier duda consulte a su médico y/o farmacéutico.',
+            prospectoLink: '../multimedia/prospectos/herbaccion-ginkgo-forte.pdf',
+        },
+        { 
+            img: '../multimedia/herbaccionMemory.png', title: 'Herbacción Memory', desc: 'Fatiga mental',
+            features: ['Vitamina B1: 1 mg', '67% IRD','Vitamina B6: 1 mg','(19-50 años): 50% IDR / (>50 años): 59% IDR)','Lecitina de Soja: 50 mg', '','Extracto de Ginkgo Biloba: 40 mg', '',],
+            featuresColumn: ['Información nutricional por ingesta diaria (1 comprimido por día)', '% IDR cubierto'],
+            featuresRow: ['Fórmula A', 'Fórmula B', 'Fórmula C', 'Fórmula D'], 
+            textAbove: 'Forma de uso: 1 comprimidos diario.',
+            textAbove2: 'Presentación: 30 comprimidos.',
+            tabletitleproduct: 'Suplemento Dietario con Ginkgo Biloba 40 mg, Fosfolípidos y Vitaminas B1, B6',
+            textBelow: '(*)% No aporta cantidades significativas de valor energético, carbohidratos, proteínas, grasas, fibra alimentaria y sodio.(*)% Valores diarios con base a una dieta de 2.000 kcal u 8.400 kj.Valores diarios con base a una dieta de 2.000 kcal u 8.400 kJ. No aporta cantidades significativas de valor energético, carbohidratos, proteínas, grasas, fibra alimentaria y sodio.',
+            clarifiedtext: 'Suplemento Dietario. Suplementa dietas insuficientes. Ante cualquier duda consulte a su médico y/o farmacéutico.',
+            prospectoLink: '../multimedia/prospectos/herbaccion-memory.pdf',
+        },
         { img: '../multimedia/herbaccionVigor.png', title: 'Herbacción Vigor', desc: 'Estados de desgano y fatiga muscular' },
         { img: '../multimedia/stopHungry.png', title: 'Stop Hungry', desc: 'Ayuno intermitente - Dietas hipocalóricas' },
         { img: '../multimedia/veg12.png', title: 'Veg 12', desc: 'Suplemento dietario a base de Vitamina B12' },
@@ -128,9 +168,33 @@ if (category && index !== null && productos[category] && productos[category][ind
 
     // Llenar características
     const productFeatures = document.getElementById('productFeatures');
-    productFeatures.innerHTML = product.features
-        .map(feature => `<tr><td colspan="3">${feature}</td></tr>`)
-        .join('');
+    productFeatures.innerHTML = ''; // Limpiar cualquier contenido anterior
+
+    // Agregar títulos de las columnas
+    const tableHeaders = document.getElementById('tableHeaders');
+    tableHeaders.innerHTML = ''; // Limpiar los encabezados anteriores
+    product.featuresColumn.forEach(col => {
+        const th = document.createElement('th');
+        th.innerText = col;
+        tableHeaders.appendChild(th);
+    });
+
+    // Agregar las filas de la tabla
+    product.featuresRow.forEach((row, rowIndex) => {
+        const tr = document.createElement('tr');
+        
+        // Crear celdas de la fila
+        product.featuresColumn.forEach((col, colIndex) => {
+            const td = document.createElement('td');
+            
+            // Rellenar las celdas con las características correspondientes
+            const featureIndex = rowIndex * product.featuresColumn.length + colIndex;
+            td.innerText = product.features[featureIndex] || ''; // Asegurarse de que no haya errores si faltan características
+            tr.appendChild(td);
+        });
+
+        productFeatures.appendChild(tr);
+    });
 
     // Agregar textos dinámicos
     document.getElementById('textAboveTable').innerText = product.textAbove;
@@ -142,6 +206,7 @@ if (category && index !== null && productos[category] && productos[category][ind
     // Configurar el botón del prospecto
     document.getElementById('prospectoButton').onclick = openProspecto;
 }
+
 
 
 
