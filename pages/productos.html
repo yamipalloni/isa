@@ -68,13 +68,13 @@
             class="hero-section-productos position-relative text-center d-flex align-items-center justify-content-center"
             style="background-image: url('../multimedia/imagenPortadaProductos.png'); background-size: cover; background-position: center; height: 500px;">
             <!-- Caja de contenido sobre la imagen con fondo gris -->
-            <div class="container position-relative text-white">
+            <div class="container position-relative text-white wow animate__animated animate__bounceInRight">
                 <div class="row align-items-center h-100">
                     <!-- Caja contenedora con fondo gris y la imagen lateral -->
                     <div class="col-md-6 text-start-productos">
                         <h1 class="display-4-productos">Nuestros productos</h1>
                         <p class="lead-productos">Desarrollamos productos para todas las
-                            especialidades médicas y así poder acompañarte en todas las etapas de tu vida.</p>
+                            especialidades médicas y así poder acompañarte en todas las etapas.          </p>
                     </div>
 
                     <!-- Imagen lateral con efecto zoom en escritorio -->
@@ -87,14 +87,14 @@
         </section>
 
 
-        <section class="container text-center py-5" id="productos">
+        <section class="container text-center py-5 wow animate__animated animate__bounceInLeft" id="productos">
             <h2 class="fw-bold mb-3">Conocé toda nuestra línea</h2>
             <p class="lead mb-5">Contamos con presencia en todas las especialidades médicas, respaldados por estándares
                 internacionales de calidad y seguridad.</p>
-
+        
             <!-- Productos -->
             <div class="row justify-content-center">
-                <div class="col-6 col-md-4 mb-4">
+                <div class="col-6 col-md-4 mb-4 wow animate__animated animate__bounceIn" data-wow-delay="0.2s">
                     <a href="#" onclick="showCarousel('suplementosDietarios'); return false;">
                         <div class="division-icon mb-2">
                             <img src="../multimedia/suplementos.dietarios.png" alt="Venta Libre" class="img-fluid">
@@ -103,7 +103,7 @@
                         <div class="divider-1 mt-2" style="width: 40px; height: 4px; margin: 0 auto;"></div>
                     </a>
                 </div>
-                <div class="col-6 col-md-4 mb-4">
+                <div class="col-6 col-md-4 mb-4 wow animate__animated animate__bounceIn" data-wow-delay="0.4s">
                     <a href="#" onclick="showCarousel('ventaLibre'); return false;">
                         <div class="division-icon mb-2">
                             <img src="../multimedia/venta.libre.png" alt="Medicamentos" class="img-fluid">
@@ -112,11 +112,10 @@
                         <div class="divider-2 mt-2" style="width: 40px; height: 4px; margin: 0 auto;"></div>
                     </a>
                 </div>
-                <div class="col-6 col-md-4 mb-4">
+                <div class="col-6 col-md-4 mb-4 wow animate__animated animate__bounceIn" data-wow-delay="0.6s">
                     <a href="#" onclick="showCarousel('medicamentos'); return false;">
                         <div class="division-icon mb-2">
-                            <img src="../multimedia/venta.bajoreceta.png" alt="Medicamentos"
-                                class="img-fluid">
+                            <img src="../multimedia/venta.bajoreceta.png" alt="Medicamentos" class="img-fluid">
                         </div>
                         <h5 class="fw-bold-productos">Medicamentos</h5>
                         <div class="divider-3 mt-2" style="width: 40px; height: 4px; margin: 0 auto;"></div>
@@ -124,6 +123,7 @@
                 </div>
             </div>
         </section>
+        
 
         <!-- Carrusel de productos -->
         <section class="bg-gray-carrusel w-100 py-4 overflow-hidden">

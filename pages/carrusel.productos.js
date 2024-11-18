@@ -2,8 +2,27 @@
 // Productos para cada categoría
 const productos = {
     suplementosDietarios: [
-        { img: '../multimedia/cartiflex.png', title: 'Cartfiflex', desc: 'Articulaciones, huesos y músculos' },
-        { img: '../multimedia/mas50.png', title: '+50', desc: 'Formulado especialmente para gente adulta' },
+        {
+            img: '../multimedia/cartiflex.png',
+            title: 'Cartiflex',
+            desc: 'Articulaciones, huesos y músculos',
+            features: ['Fortalece cartílagos', 'Alivia dolor articular', 'Fácil absorción'],
+            textAbove: 'Forma de uso: 2 comprimidos diarios.',
+            textAbove2: 'Presentación: 30 y 60 comprimidos.',
+            tabletitleproduct: 'Cada comprimido contiene:',
+            textBelow: '*% Valores diarios con base a una dieta de 2.000 kcal u 8.400 kJ. No aporta cantidades significativas de valor energético, carbohidratos, proteínas, grasas, fibra alimentaria y sodio. IDR: INGESTA DIARIA DE REFERENCIA.',
+            clarifiedtext: 'Suplemento Dietario. Suplementa dietas insuficientes. Ante cualquier duda consulte a su médico y/o farmacéutico.',
+            prospectoLink: '../prospectos/cartiflex.pdf',
+        },
+        {
+            img: '../multimedia/mas50.png',
+            title: '+50',
+            desc: 'Formulado especialmente para gente adulta',
+            features: ['Vitaminas esenciales', 'Mejora energía', 'Refuerza defensas'],
+            textAbove: 'Un aliado perfecto para una vida activa.',
+            textBelow: 'Consulta siempre a tu médico antes de consumir suplementos.',
+            prospectoLink: '../prospectos/mas50.pdf',
+        },
         { img: '../multimedia/diaD.png', title: 'Día D', desc: 'Suplemento dietario a base de Vitamina D' },
         { img: '../multimedia/herbaccionGinkgoForte.png', title: 'Herbacción Ginkgo Forte', desc: 'Cansancio y Fatiga Mental' },
         { img: '../multimedia/herbaccionMemory.png', title: 'Herbacción Memory', desc: 'Fatiga mental' },
@@ -88,28 +107,41 @@ window.addEventListener('resize', () => {
 // Obtener parámetros de la URL
 const urlParams = new URLSearchParams(window.location.search);
 const category = urlParams.get('category');
-const index = urlParams.get('index');
+const index = parseInt(urlParams.get('index'), 10);
+
+// Función para abrir el prospecto
+function openProspecto() {
+    if (category && index !== null && productos[category] && productos[category][index]) {
+        const product = productos[category][index];
+        window.open(product.prospectoLink, '_blank');
+    }
+}
 
 // Verificar si los parámetros están presentes antes de intentar acceder a los productos
-if (category && index !== null && productos[category] && productos[category][parseInt(index, 10)]) {
-    const product = productos[category][parseInt(index, 10)];
+if (category && index !== null && productos[category] && productos[category][index]) {
+    const product = productos[category][index];
 
     // Mostrar datos en la página
     document.getElementById('productTitle').innerText = product.title;
     document.getElementById('productDescription').innerText = product.desc;
     document.getElementById('productImage').src = product.img;
 
-    // Ejemplo de características (podrías reemplazar esto con datos reales)
+    // Llenar características
     const productFeatures = document.getElementById('productFeatures');
-    productFeatures.innerHTML = `
-        <tr>
-            <td>Valor 1</td>
-            <td>Valor 2</td>
-            <td>Valor 3</td>
-        </tr>
-    `;
-} else if (category || index !== null) {
-    // Solo mostrar el mensaje si se intenta acceder a un producto con parámetros incorrectos
-    alert('Producto no encontrado');
+    productFeatures.innerHTML = product.features
+        .map(feature => `<tr><td colspan="3">${feature}</td></tr>`)
+        .join('');
+
+    // Agregar textos dinámicos
+    document.getElementById('textAboveTable').innerText = product.textAbove;
+    document.getElementById('textAboveTable2').innerText = product.textAbove2;
+    document.getElementById('table-title-product').innerText = product.tabletitleproduct;
+    document.getElementById('textBelowTable').innerText = product.textBelow;
+    document.getElementById('clarified-text').innerText = product.clarifiedtext;
+
+    // Configurar el botón del prospecto
+    document.getElementById('prospectoButton').onclick = openProspecto;
 }
+
+
 

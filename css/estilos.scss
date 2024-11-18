@@ -277,6 +277,7 @@ html{
         background-image: none; /* Elimina cualquier imagen de fondo en móviles */
         padding: 20px; /* Añade un margen interno */
     }
+    
 
     .hero-section-productos .row {
         flex-direction: column-reverse; /* Cambia el orden de los elementos */
@@ -410,6 +411,111 @@ html{
     color: white;
     font-size: 10px;
 }
+
+
+//** Detalle de Productos **// Carrusel
+/* Animación de zoom para la imagen */
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.product-zoom {
+    animation: heartbeat 1.5s infinite;
+    transition: transform 0.3s ease; /* Para suavizar cuando se detiene el hover */
+}
+
+.product-zoom:hover {
+    animation: none; /* Opcional: detiene la animación continua al hacer hover */
+    transform: scale(1.1); /* Zoom estático al hacer hover */
+}
+
+
+
+.product-info {
+    #textabovetable {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        font-family: $font1;
+    }
+    
+    #textabovetable2 {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+        font-family: $font1;
+    }
+    
+    #table-title-product {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        font-family: $font1;
+    }
+    
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 1.5rem;
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 0.8rem;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f9f9f9;
+        }
+    }
+    
+    
+    .blue-line {
+        height: 1px;
+        background-color: $color5; // Línea azul sólida
+        margin: 1.5rem 0;
+    }
+    
+    #textbelowtable {
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+        font-family: $font2;
+    }
+    
+    #clarified-text {
+        font-size: 0.75rem;
+        color: $color1;
+        margin-bottom: 1.5rem;
+        font-family: $font2;
+    }
+}
+
+
+
+/* Botón de prospecto */
+.prospecto-btn {
+    background-color: #2A3F92;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.prospecto-btn:hover {
+    background-color: white;
+    color: #2A3F92;
+    border: 2px solid #2A3F92;
+}
+
 
 
 
