@@ -26,6 +26,7 @@ html {
 
 .navbar-toggler {
   margin-left: auto; /* Esto se elimina en la versión móvil */
+  justify-content: end;
 }
 
 .nav-list {
@@ -42,25 +43,6 @@ html {
   color: #C3C4C6 !important;
 }
 
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 390px) {
-  .navbar-brand img {
-    width: 20%;
-  }
-  .navbar {
-    flex-direction: row; /* Mantiene los elementos en una línea */
-  }
-  .navbar-brand {
-    order: 1; /* Logo a la izquierda */
-  }
-  .navbar-toggler {
-    order: 2; /* Menú a la derecha */
-    margin-left: 0;
-  }
-  .collapse {
-    width: 100%;
-  }
-}
 .hero-section {
   background-size: cover;
   padding: 100px 0;
