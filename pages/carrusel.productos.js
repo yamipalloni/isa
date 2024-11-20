@@ -144,14 +144,16 @@ const productos = {
         { img: '../multimedia/buenasNoches.png', title: 'Buenas Noches', desc: 'Inductor del sueño' },
         { img: '../multimedia/gluco30.png', title: 'Glucocartiflex', desc: 'Antiartrósico' },
         { img: '../multimedia/herbaccionSedante.png', title: 'Herbacción Sedante', desc: 'Alivio de síntomas de ansiedad' },
+        { img: '../multimedia/isagrip.png', title: 'IsaGrip 4', desc: 'Analgésico, antifebril, antitusivo y descongestivo' },
         { img: '../multimedia/paracetamol500mg.png', title: 'Paracetamol ISA 500 mg', desc: 'Analgésico, antifebril, antitusivo y descongestivo' },
         { img: '../multimedia/paracetamol1g.png', title: 'Paracetamol ISA 1 g', desc: 'Analgésico, antifebril' },
     ],
     medicamentos: [
         { img: '../multimedia/atorvastatina10.png', title: 'Atorvastatina ISA 10 mg', desc: 'Reduce el colesterol' },
         { img: '../multimedia/atorvastatina20.png', title: 'Atorvastatina ISA 20 mg', desc: 'Reduce el colesterol' },
-        { img: '../multimedia/bn-novedad.png', title: 'Bistronfor', desc: 'Mucolítico de las vías respiratorias' },
+        { img: '../multimedia/bistronfor.png', title: 'Bistronfor', desc: 'Mucolítico de las vías respiratorias' },
         { img: '../multimedia/4.4.png', title: '4x4 | Sidenafil 50 mg', desc: 'Vasodilatador' },
+        { img: '../multimedia/paracetamol1g2.png', title: 'Paracetamol 1 g', desc: 'Analgésico - Antifebril' },
         { img: '../multimedia/quartier.png', title: 'Quartier | Tadalafilo 20 mg', desc: 'Tratamiento para la disfunción eréctil' },
     ]
 };
@@ -200,6 +202,7 @@ function showCarousel(category) {
 
     document.getElementById('productosCarousel').style.display = 'block'; // Mostrar el carrusel
 }
+
 
 
 // Evento para actualizar el carrusel al cambiar el tamaño de la pantalla

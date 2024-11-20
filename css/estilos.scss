@@ -394,6 +394,18 @@ html{
     font-size: 10px;
 }
 
+.carousel-inner-productos .row {
+    margin: 0; /* Elimina márgenes laterales que puedan causar desbordamiento */
+    justify-content: center; /* Asegura que los productos estén centrados */
+}
+
+@media (max-width: 768px) {
+    .carousel-inner-productos .row .col-6 {
+        max-width: 50%; /* Cada producto ocupa el 50% del ancho */
+        flex: 0 0 50%; /* Asegura que se mantengan dos productos por fila */
+    }
+}
+
 
 //** Detalle de Productos **// Carrusel
 /* Animación de zoom para la imagen */
