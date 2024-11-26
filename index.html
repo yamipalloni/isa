@@ -214,10 +214,10 @@
     <p class="lead mb-5">Contamos con presencia en todas las especialidades médicas, respaldados por estándares
         internacionales de calidad y seguridad.</p>
 
-    <!-- Productos -->
+    <!-- Productos acá dirige a productos directamente, porque aún no resolví lo de la carga d eimagenes considerando la ruta diferente-->
     <div class="row justify-content-center">
         <div class="col-6 col-md-4 mb-4 wow animate__animated animate__bounceIn" data-wow-delay="0.2s">
-            <a href="#" onclick="showCarousel('suplementosDietarios'); return false;">
+            <a href="./pages/productos.html" onclick="showCarousel('suplementosDietarios'); return false;">
                 <div class="division-icon mb-2">
                     <img src="./multimedia/suplementos.dietarios.png" alt="Venta Libre" class="img-fluid">
                 </div>
@@ -226,7 +226,7 @@
             </a>
         </div>
         <div class="col-6 col-md-4 mb-4 wow animate__animated animate__bounceIn" data-wow-delay="0.4s">
-            <a href="#" onclick="showCarousel('ventaLibre'); return false;">
+            <a href="./pages/productos.html" onclick="showCarousel('ventaLibre'); return false;">
                 <div class="division-icon mb-2">
                     <img src="./multimedia/venta.libre.png" alt="Medicamentos" class="img-fluid">
                 </div>
@@ -235,7 +235,7 @@
             </a>
         </div>
         <div class="col-6 col-md-4 mb-4 wow animate__animated animate__bounceIn" data-wow-delay="0.6s">
-            <a href="#" onclick="showCarousel('medicamentos'); return false;">
+            <a href="./pages/productos.html" onclick="showCarousel('medicamentos'); return false;">
                 <div class="division-icon mb-2">
                     <img src="./multimedia/venta.bajoreceta.png" alt="Medicamentos" class="img-fluid">
                 </div>
@@ -246,29 +246,6 @@
     </div>
 </section>
 
-
-<!-- Carrusel de productos -->
-<section class="bg-gray-carrusel w-100 py-4 overflow-hidden">
-    <div class="container mt-4" id="productosCarousel" style="display: none;">
-        <div id="productosCarouselInner" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner-productos" id="carouselItems">
-                <!-- Items del carrusel generados por JavaScript -->
-            </div>
-
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#productosCarouselInner"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#productosCarouselInner"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-            </button>
-        </div>
-    </div>
-</section>
 
 <!-- Sección de Contacto y Suscripción -->
 <section class="container-contacto py-5">
