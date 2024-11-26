@@ -3,7 +3,7 @@
 const productos = {
     suplementosDietarios: [
         {
-            img: '../multimedia/cartiflex.png',
+            img: '/multimedia/cartiflex.png',
             title: 'Cartiflex',
             desc: 'Articulaciones, huesos y músculos',
             features: ['Magnesio: 188 mg', '(19 - 65 años): 72% (>65 años): 82%','Cartílago de tiburón: 400 mg', '(19 - 65 años): 72% (>65 años): 82%'],
@@ -17,7 +17,7 @@ const productos = {
             prospectoLink: '../multimedia/prospectos/cartiflex.pdf',
         },
         {
-            img: '../multimedia/mas50.png',
+            img: '/multimedia/mas50.png',
             title: '+50',
             desc: 'Formulado especialmente para gente adulta',
             features: ['Vitamina B1: 15 mg', '1249% IDR','Vitamina B6: 15 mg', '1154% IDR','Vitamina B12: 1 mg', '% IDR','Zinc: 3 mg', '43% IDR'],
@@ -31,7 +31,7 @@ const productos = {
             prospectoLink: '../multimedia/prospectos/+50.pdf',
         },
         { 
-            img: '../multimedia/diaD.png', title: 'Día D', desc: 'Suplemento dietario a base de Vitamina D',
+            img: '/multimedia/diaD.png', title: 'Día D', desc: 'Suplemento dietario a base de Vitamina D',
             features: ['Vitamina D3 (colecalciferol): 800 U.I.', '(19-50 años): 400%(SUPERA LA IDR)','Vitamina D3 (colecalciferol): 800 U.I.','(51-65 años): 200% (SUPERA LA IDR)','Vitamina D3 (colecalciferol): 800 U.I.', '(>65 años): 133% (SUPERA LA IDR)'],
             featuresColumn: ['Información nutricional por ingesta diaria (1 comprimido por día)', '% IDR cubierto'],
             featuresRow: ['Fórmula A', 'Fórmula B', 'Fórmula C'], 
@@ -43,7 +43,7 @@ const productos = {
             prospectoLink: '../multimedia/prospectos/dia-d.pdf',
         },
         { 
-            img: '../multimedia/herbaccionGinkgoForte.png', title: 'Herbacción Ginkgo Forte', desc: 'Cansancio y Fatiga Mental',
+            img: '/multimedia/herbaccionGinkgoForte.png', title: 'Herbacción Ginkgo Forte', desc: 'Cansancio y Fatiga Mental',
             features: ['Vitamina B1: 3 mg', '250%(SUPERA LA IDR)','Vitamina B2: 3 mg','231% (SUPERA LA IDR)','Vitamina B6: 3 mg', '(19-50 años): 230% (SUPERA LA IDR) / (> 50 años: 176% (SUPERA LA IDR)'],
             featuresColumn: ['Información nutricional por ingesta diaria (1 comprimido por día)', '% IDR cubierto'],
             featuresRow: ['Fórmula A', 'Fórmula B', 'Fórmula C'], 
@@ -55,7 +55,7 @@ const productos = {
             prospectoLink: '../multimedia/prospectos/herbaccion-ginkgo-forte.pdf',
         },
         { 
-            img: '../multimedia/herbaccionMemory.png', title: 'Herbacción Memory', desc: 'Fatiga mental',
+            img: '/multimedia/herbaccionMemory.png', title: 'Herbacción Memory', desc: 'Fatiga mental',
             features: ['Vitamina B1: 1 mg', '67% IRD','Vitamina B6: 1 mg','(19-50 años): 50% IDR / (>50 años): 59% IDR)','Lecitina de Soja: 50 mg', '','Extracto de Ginkgo Biloba: 40 mg', '',],
             featuresColumn: ['Información nutricional por ingesta diaria (1 comprimido por día)', '% IDR cubierto'],
             featuresRow: ['Fórmula A', 'Fórmula B', 'Fórmula C', 'Fórmula D'], 
