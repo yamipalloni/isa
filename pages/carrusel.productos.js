@@ -343,9 +343,10 @@ function showCarousel(category) {
     }
 
     document.getElementById('productosCarousel').style.display = 'block'; // Mostrar el carrusel
+
+    // Desplazarse hacia el carrusel
+    document.getElementById('productosCarousel').scrollIntoView({ behavior: 'smooth' });
 }
-
-
 
 // Evento para actualizar el carrusel al cambiar el tamaño de la pantalla
 window.addEventListener('resize', () => {
@@ -353,6 +354,7 @@ window.addEventListener('resize', () => {
         showCarousel(currentCategory); // Actualizar el carrusel con la categoría actual
     }
 });
+
 
 // Descripción de cada producto
 // Obtener parámetros de la URL
