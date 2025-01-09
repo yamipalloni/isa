@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!-- español-->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Posicionamiento SEO -->
+    <meta name="description"
+        content="Estamos presentes en cada especialidad médica, avalados por estándares internacionales de calidad y seguridad.">
+    <!-- vincular con font awesome para íconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- poner el logo pequeño en la pestaña -->
+    <link rel="shortcut icon" href="../multimedia/logo2.png" type="image/x-icon">
+    <!-- vincular con Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- vincular con Animation WOW-->
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- vincular con CSS-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title> Productos ISA </title>
+</head>
+
+<body>
+    <header>
+        <!--nav bar inicio-->
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../multimedia/logo.navbar2.png" alt="ISA"
+                    style="width: 15%"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav-list" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./empresa.html">Nuestra historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./planta.html">Planta producción</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">Nuestros productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--nav bar final-->
+    </header>
+
+    <main>
+
+        <!-- Hero Section con Imagen de Portada y Texto Lateral Derecho -->
+        <section
+            class="hero-section-productos position-relative text-center d-flex align-items-center justify-content-center"
+            style="background-image: url('../multimedia/imagenPortadaProductos.png'); background-size: cover; background-position: center; height: 500px;">
+            <!-- Caja de contenido sobre la imagen con fondo gris -->
+            <div class="container position-relative text-white wow animate__animated animate__bounceInRight">
+                <div class="row align-items-center h-100">
+                    <!-- Caja contenedora con fondo gris y la imagen lateral -->
+                    <div class="col-md-6 text-start-productos">
+                        <h1 class="display-4-productos">Nuestros productos</h1>
+                        <p class="lead-productos">Respaldados por estándares internacionales de calidad y seguridad.         </p>
+                    </div>
+
+                    <!-- Imagen lateral con efecto zoom en escritorio -->
+                    <div class="col-md-6 position-relative p-0">
+                        <img src="../multimedia/packs.Productos.png" alt="Imagen lateral"
+                            class="img-fluid h-100 w-100 object-fit-cover zoom-image-productos">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container text-center py-5 wow animate__animated animate__bounceInLeft" id="productos">
+            <h2 class="fw-bold mb-3">Conocé toda nuestra línea</h2>
+        
+            <!-- Productos -->
+            <div class="row justify-content-center">
+                <div class="col-6 col-md-4 mb-4 wow animate__animated animate__bounceIn" data-wow-delay="0.2s">
+                    <a href="#" onclick="showCarousel('suplementosDietarios'); return false;">
+                        <div class="division-icon mb-2">
+                            <img src="../multimedia/suplementos.dietarios.png" alt="Venta Libre" class="img-fluid">
+                        </div>
+                        <h5 class="fw-bold-productos">Suplementos dietarios</h5>
+                        <div class="divider-1 mt-2" style="width: 40px; height: 4px; margin: 0 auto;"></div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 mb-4 wow animate__animated animate__bounceIn" data-wow-delay="0.4s">
+                    <a href="#" onclick="showCarousel('ventaLibre'); return false;">
+                        <div class="division-icon mb-2">
+                            <img src="../multimedia/venta.libre.png" alt="Medicamentos" class="img-fluid">
+                        </div>
+                        <h5 class="fw-bold-productos">Medicamentos de Venta Libre</h5>
+                        <div class="divider-2 mt-2" style="width: 40px; height: 4px; margin: 0 auto;"></div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 mb-4 wow animate__animated animate__bounceIn" data-wow-delay="0.6s">
+                    <a href="#" onclick="showCarousel('medicamentos'); return false;">
+                        <div class="division-icon mb-2">
+                            <img src="../multimedia/venta.bajoreceta.png" alt="Medicamentos" class="img-fluid">
+                        </div>
+                        <h5 class="fw-bold-productos">Medicamentos de Venta Bajo Receta</h5>
+                        <div class="divider-3 mt-2" style="width: 40px; height: 4px; margin: 0 auto;"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Carrusel de productos -->
+        <section class="bg-gray-carrusel w-100 py-4 overflow-hidden">
+            <div class="container mt-4" id="productosCarousel" style="display: none;">
+                <div id="productosCarouselInner" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner-productos" id="carouselItems">
+                        <!-- Items del carrusel generados por JavaScript -->
+                    </div>
+
+                    <!-- Controles del carrusel -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productosCarouselInner"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productosCarouselInner"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--Cierre página-->
+        <footer>
+            <div class="row">
+                <div class="col-sm-1 col-md-6">
+                    <img src="../multimedia/logo1.png" alt="Laboratorio" class="mx-auto d-block" style="width:20%">
+                </div>
+                <div class="col-sm-1 col-md-6 cierre">
+                    <ul class="footer-links">
+                        <li><a href="http://pedidos.isalaboratorios.com.ar/pedidos/site/pLogin.php">Intranet</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                    <h8 class="wow animate__animated animate__rollIn">Todos los derechos reservados</h8>
+                </div>
+            </div>
+        </footer>
+
+        <!--Subir de la página-->
+        <a href="#" class="subir"><i class="fa-solid fa-upload"></i></a>
+
+        <!-- inicia sript de WOW (antes de cerrar body)-->
+        <script src="../utilidades/js/wow.min.js"></script>
+        <script>new WOW().init();</script>
+        <!-- inicia sript de BS (antes de cerrar body)-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"></script>
+
+        <!-- inicia sript de productos -->
+        <script src="carrusel.productos.js"></script>
+</body>
+
+</html>

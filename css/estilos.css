@@ -1,0 +1,616 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Petrona:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: #2A3F92;
+  font-family: "Roboto", serif;
+  font-size: 18.5px;
+  display: flex;
+  justify-content: space-between; /* Logo al inicio e ícono al final */
+  align-items: center;
+  padding: 0 1rem; /* Ajusta según tu diseño */
+}
+
+.navbar-brand img {
+  margin-left: 100px;
+}
+
+.navbar-toggler {
+  margin-left: auto;
+  justify-content: end;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: end;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-list .nav-item {
+  display: flex; /* Asegura que el contenido y el separador estén en la misma línea */
+  align-items: center;
+  padding: 0 1rem; /* Espaciado horizontal entre los elementos */
+  /* Agregar un palito separador */
+  /* Elimina el palito del último elemento */
+}
+.nav-list .nav-item::after {
+  content: "|"; /* El separador */
+  margin-left: 1rem; /* Espaciado a la izquierda del separador */
+  color: #ffffff; /* Cambia por el color deseado */
+}
+.nav-list .nav-item:last-child::after {
+  content: none;
+}
+
+@media (min-width: 768px) {
+  .nav-list .nav-item::after {
+    content: "|";
+  }
+}
+.nav-link {
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  color: #C3C4C6 !important;
+}
+
+/* Personalizaciones para Mobile */
+@media (max-width: 768px) {
+  .nav-list {
+    align-items: end;
+    flex-direction: column; /* Cambiar a vertical */
+  }
+  .nav-list .nav-item::after {
+    content: none; /* Elimina el separador */
+  }
+  .navbar {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar .navbar-brand img {
+    width: auto; /* Tamaño adaptable si es necesario */
+    margin-left: 0%;
+    max-height: 180px;
+    max-width: 250px;
+  }
+  .navbar .navbar-toggler {
+    align-self: center;
+  }
+}
+.hero-section {
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.card-product {
+  transition: transform 0.3s ease;
+}
+
+.card-product:hover {
+  transform: scale(1.05);
+}
+
+.ver-novedades {
+  background-color: #2A3F92 !important;
+  border-color: #ffffff;
+}
+
+.ver-novedades:hover {
+  background-color: #C3C4C6 !important;
+  color: #2A3F92 !important;
+}
+
+.display-4-index {
+  font-family: "Roboto", serif;
+  font-size: 50px;
+}
+
+.lead-index {
+  font-family: "Roboto", serif;
+  font-size: 20px;
+}
+
+.highlight {
+  color: #2A3F92;
+}
+
+#sobre-nosotros {
+  font-family: "Roboto", serif;
+}
+
+#sobre-nosotros p {
+  font-size: 18px;
+}
+
+.beneficios h4 {
+  font-family: "Roboto", serif;
+}
+
+.beneficios p {
+  font-family: "DM Sans", sans-serif;
+}
+
+#productos-novedad {
+  margin: 0;
+  padding: 0;
+  /* Punto de corte para tablets y dispositivos medianos */
+  /* Punto de corte específico para dispositivos móviles pequeños */
+}
+#productos-novedad h3 {
+  font-family: "Roboto", serif;
+  font-size: calc(50px - 8px);
+}
+#productos-novedad p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  #productos-novedad h3 {
+    font-size: 1.4rem; /* Ajusta el tamaño para tablets */
+  }
+  #productos-novedad p {
+    font-size: 1rem; /* Ajusta el tamaño para tablets */
+  }
+}
+@media (max-width: 390px) {
+  #productos-novedad h3 {
+    font-size: 1.2rem;
+  }
+  #productos-novedad p {
+    font-size: 0.9rem;
+  }
+}
+
+.carousel-novedades .carousel-item {
+  position: relative;
+}
+
+.carousel-novedades .carousel-item .container {
+  position: relative;
+  z-index: 2;
+}
+
+.animate-zoom {
+  animation: zoomIn 3s infinite alternate;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.section-separator {
+  height: 5px;
+  background-color: #2A3F92;
+  margin: 0;
+  padding: 0;
+}
+
+.ver-producto {
+  background-color: #2A3F92 !important;
+  border-color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.ver-producto:hover {
+  background-color: #C3C4C6 !important;
+  color: #2A3F92 !important;
+}
+
+.efecto-latido {
+  /* Animación de latido suave */
+  animation: latido 2s infinite;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Definición de la animación de latido */
+@keyframes latido {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+/* Estilo para el zoom in suave en la imagen */
+@keyframes zoomEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.zoom-image-productos {
+  animation: zoomEffect 5s ease-in-out infinite; /* Animación continua de 5 segundos */
+}
+
+/* En versiones móviles, ajustamos el layout */
+@media (max-width: 767px) {
+  .hero-section-productos {
+    background-image: none; /* Elimina cualquier imagen de fondo en móviles */
+    padding: 20px; /* Añade un margen interno */
+  }
+  .hero-section-productos .row {
+    flex-direction: column-reverse; /* Cambia el orden de los elementos */
+    align-items: center; /* Centra los elementos */
+    text-align: center; /* Asegura que el texto esté centrado en móviles */
+  }
+  /* Estilo para el texto */
+  .text-start-productos {
+    margin-bottom: 20px; /* Añade espacio entre el texto y la imagen */
+  }
+  /* Imagen lateral ajustada */
+  .zoom-image-productos {
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    height: auto; /* Mantiene las proporciones originales */
+    -o-object-fit: contain;
+       object-fit: contain; /* Evita que la imagen se deforme */
+  }
+  /* Contenedor de la imagen */
+  .hero-section-productos .col-md-6:last-child {
+    padding: 0; /* Elimina relleno adicional */
+    width: 100%; /* Asegura que ocupe el ancho completo */
+  }
+}
+.display-4-productos {
+  font-family: "Roboto", serif;
+  color: #2A3F92;
+  text-align: left;
+}
+
+.lead-productos {
+  font-family: "Roboto", serif;
+  color: #2A3F92;
+  text-align: left;
+}
+
+.fw-bold-productos {
+  font-family: "Roboto", serif;
+  text-decoration: none;
+  color: #2A3F92;
+}
+
+.row a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.divider-1 {
+  background-color: #2295D3;
+}
+
+.divider-2 {
+  background-color: #2295D3;
+}
+
+.divider-3 {
+  background-color: #2295D3;
+}
+
+.division-icon {
+  position: relative;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  transform: scale(1);
+}
+.division-icon img {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+}
+.division-icon:hover {
+  box-shadow: 0 8px 20px rgba(0, 183, 255, 0.6);
+  transform: scale(1.03);
+  border: 2px solid #2295D3 0, 183, 255, 0.8;
+}
+
+#productosCarousel h5 {
+  color: #2A3F92;
+}
+
+#productosCarousel p {
+  color: #2A3F92;
+}
+
+#productosCarousel .carousel-item {
+  padding: 1.5rem;
+}
+
+#productosCarousel .carousel-item img {
+  max-height: 200px;
+  margin-bottom: 1rem;
+}
+
+.bg-gray-carrusel {
+  background-image: url("../multimedia/fondo.CarruselProductos.png");
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+#productosCarousel .carousel-inner-productos {
+  background-color: transparent;
+}
+
+#productosCarousel .carousel-control-prev-icon,
+#productosCarousel .carousel-control-next-icon {
+  background-color: #2A3F92;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+#productosCarousel .carousel-control-prev-icon::after,
+#productosCarousel .carousel-control-next-icon::after {
+  color: white;
+  font-size: 10px;
+}
+
+.carousel-inner-productos .row {
+  margin: 0; /* Elimina márgenes laterales que puedan causar desbordamiento */
+  justify-content: center; /* Asegura que los productos estén centrados */
+}
+
+@media (max-width: 768px) {
+  .carousel-inner-productos .row .col-6 {
+    max-width: 50%; /* Cada producto ocupa el 50% del ancho */
+    flex: 0 0 50%; /* Asegura que se mantengan dos productos por fila */
+  }
+}
+#carouselItems:hover {
+  transform: scale(1.1); /* Zoom estático al hacer hover */
+}
+
+/* Animación de zoom para la imagen */
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.product-zoom {
+  animation: heartbeat 1.5s infinite;
+  transition: transform 0.3s ease; /* Para suavizar cuando se detiene el hover */
+}
+
+.product-zoom:hover {
+  animation: none; /* Opcional: detiene la animación continua al hacer hover */
+  transform: scale(1.1); /* Zoom estático al hacer hover */
+}
+
+.product-info1 {
+  display: flex;
+  flex-direction: column; /* Cambia a diseño vertical */
+  align-items: center; /* Centra los elementos horizontalmente */
+}
+
+#productTitleImg {
+  margin: 0 0 10px 0; /* Agrega un margen inferior para separar del producto */
+  width: 20%; /* Controla el ancho */
+}
+
+#productImage {
+  margin: 0;
+  width: 50%; /* Controla el ancho */
+}
+
+button.btn-secondary {
+  display: block;
+  margin: 0 auto 10px; /* Centra el botón y ajusta el margen inferior */
+}
+
+.product-info #textabovetable {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-family: "Roboto", serif;
+}
+.product-info #textabovetable2 {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  font-family: "Roboto", serif;
+}
+.product-info #table-title-product {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-family: "Roboto", serif;
+}
+.product-info .table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+.product-info .table th, .product-info .table td {
+  border: 1px solid black;
+  padding: 0.8rem;
+  text-align: left;
+}
+.product-info .table th {
+  background-color: #f9f9f9;
+}
+.product-info .blue-line {
+  height: 1px;
+  background-color: #2A3F92;
+  margin: 1.5rem 0;
+}
+.product-info #textbelowtable {
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  font-family: "DM Sans", sans-serif;
+}
+.product-info #clarified-text {
+  font-size: 0.75rem;
+  color: #2A3F92;
+  margin-bottom: 1.5rem;
+  font-family: "DM Sans", sans-serif;
+}
+
+.product-detail {
+  background: linear-gradient(180deg, rgb(255, 254, 254) 0%, #C3C4C6 100%);
+  margin-top: 0;
+  padding-bottom: 50px; /* separa del footer */
+  padding-top: 0;
+}
+
+/* Botón de prospecto */
+.prospecto-btn {
+  background-color: #2A3F92;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.prospecto-btn:hover {
+  background-color: white;
+  color: #2A3F92;
+  border: 2px solid #2A3F92;
+}
+
+/* Botón de comprar (ahora de volver)*/
+.buy-btn {
+  background-color: #2A3F92;
+  color: white !important;
+  text-decoration: none;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.buy-btn:hover {
+  background-color: white;
+  color: #2A3F92 !important;
+  border: 2px solid #2A3F92;
+}
+
+.card-nosotros {
+  padding: 20px;
+}
+.card-nosotros h2 {
+  font-family: "Roboto", serif;
+  color: black;
+}
+
+.card-nosotros p {
+  font-family: "DM Sans", sans-serif;
+  color: black;
+}
+
+.card-body-nosotros {
+  background-color: #C3C4C6;
+  background: linear-gradient(180deg, rgb(255, 254, 254) 0%, #C3C4C6 100%);
+}
+
+/* Estilo para el zoom in suave en la imagen */
+@keyframes zoomEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.025);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.zoom-image-contacto {
+  animation: zoomEffect 10s ease-in-out infinite; /* Animación continua de 5 segundos */
+}
+
+.display-4-contacto {
+  font-family: "Roboto", serif;
+  color: #2A3F92;
+  text-align: left;
+}
+
+.lead-contacto {
+  font-family: "Roboto", serif;
+  color: #2A3F92;
+  text-align: left;
+}
+
+footer {
+  background-color: #2A3F92;
+  color: #2295D3;
+  text-align: left;
+  padding: 20px;
+  font-family: "Roboto", serif;
+}
+footer .footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer .footer-links li {
+  margin-bottom: 0;
+}
+footer .footer-links li a {
+  text-decoration: none;
+  color: #2295D3;
+  font-size: 17px;
+  font-family: "Roboto", serif;
+}
+footer .footer-links li a:hover {
+  color: #CFF0FC;
+}
+
+.cierre {
+  text-align: left;
+}
+
+.logo-footer {
+  padding: 20px;
+}
+
+.subir {
+  width: 40px;
+  height: 40px;
+  background-color: #C3C4C6;
+  text-decoration: none;
+  color: #2A3F92;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+}
+.subir :hover {
+  color: #C3C4C6;
+  background-color: #2A3F92;
+}/*# sourceMappingURL=estilos.css.map */
