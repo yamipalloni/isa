@@ -464,6 +464,10 @@ html{
     justify-content: center; /* Asegura que los productos estén centrados */
 }
 
+.logo {
+    width: 60%;
+}
+
 @media (max-width: 768px) {
     .carousel-inner-productos .row .col-6 {
         max-width: 50%; /* Cada producto ocupa el 50% del ancho */
@@ -681,7 +685,19 @@ button.btn-secondary {
     text-align: left;
 }
 
+.maps {
+    font-family: $font1;
+}
 
+.mapsfondo {
+    background: linear-gradient(180deg,rgb(255, 254, 254) 0%,$color1 100%),
+}
+.cierre-contacto {
+    font-family: $font1;
+    h2 {
+        margin-bottom: 20px;
+    }
+}
 
 //** Cierre página **//
 

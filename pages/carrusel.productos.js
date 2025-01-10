@@ -19,7 +19,7 @@ const productos = {
         {
             img: '../multimedia/mas50.png',
             titleImg: '../multimedia/logos/logo.+50.png',
-            desc: 'Formulado especialmente para gente adulta',
+            desc: 'Especialmente para gente adulta',
             features: ['Vitamina B1: 15 mg', '1249% IDR','Vitamina B6: 15 mg', '1154% IDR','Vitamina B12: 1 mg', '% IDR','Zinc: 3 mg', '43% IDR'],
             featuresColumn: ['Información nutricional por ingesta diaria (1 comprimido por día)', '% IDR cubierto'], 
             featuresRow: ['Fórmula A', 'Fórmula B', 'Fórmula C', 'Fórmula D'], 
@@ -31,7 +31,7 @@ const productos = {
             prospectoLink: '../multimedia/prospectos/+50.pdf',
         },
         { 
-            img: '../multimedia/diaD.png', titleImg: '../multimedia/logos/logo.diaD.png', desc: 'Suplemento dietario a base de Vitamina D',
+            img: '../multimedia/diaD.png', titleImg: '../multimedia/logos/logo.diaD.png', desc: 'Suplemento dietario Vitamina D',
             features: ['Vitamina D3 (colecalciferol): 800 U.I.', '(19-50 años): 400%(SUPERA LA IDR)','Vitamina D3 (colecalciferol): 800 U.I.','(51-65 años): 200% (SUPERA LA IDR)','Vitamina D3 (colecalciferol): 800 U.I.', '(>65 años): 133% (SUPERA LA IDR)'],
             featuresColumn: ['Información nutricional por ingesta diaria (1 comprimido por día)', '% IDR cubierto'],
             featuresRow: ['Fórmula A', 'Fórmula B', 'Fórmula C'], 
@@ -67,7 +67,7 @@ const productos = {
             prospectoLink: '../multimedia/prospectos/herbaccion-memory.pdf',
         },
         { 
-            img: '../multimedia/herbaccionVigor.png', titleImg: '../multimedia/logos/logo.vigor.png', desc: 'Estados de desgano y fatiga muscular',
+            img: '../multimedia/herbaccionVigor.png', titleImg: '../multimedia/logos/logo.vigor.png', desc: 'Desgano y fatiga muscular',
             features: ['Magnesio: 80 mg', '20% IRD','Raíz de Ginseng: 50 mg','','Guaraná: 40 mg', '',],
             featuresColumn: ['Información nutricional por ingesta diaria (1 comprimido por día)', '% IDR cubierto'],
             featuresRow: ['Fórmula A', 'Fórmula B', 'Fórmula C'], 
@@ -79,7 +79,7 @@ const productos = {
             prospectoLink: '../multimedia/prospectos/herbaccion-vigor.pdf',
         },
         { 
-            img: '../multimedia/stopHungry.png', titleImg: '../multimedia/logos/logo.stophungry.png', desc: 'Ayuno intermitente - Dietas hipocalóricas',
+            img: '../multimedia/stopHungry.png', titleImg: '../multimedia/logos/logo.stophungry.png', desc: 'Ayuno intermitente, dietas hipocalóricas',
             features: ['Vitamina C: 40 mg', '89% IRD','Vitamina B1: 2 mg','167% (Supera IDR)','Vitamina B2: 2mg', '154% (Supera IDR)','Vitamina B6: 2mg', '(19 - 50 años): 154% (Supera IDR) / (> 50 años): 118% (Supera la IDR)','Vitamina D: 5 mcg', '(19 - 50 años): 100% / (> 50 años): 50%','Ácido pantoténico: 2 mg', '160% (Supera la IDR)','Vitamina E: 5 mg', '50%','Biotina: 10 mcg', '33%','Cromo: 19 mcg', '(19 - 50 años): 54 % / (> 50 años): 63%','Selenio: 20 mcg', '59%','Iodo: 88 mcg', '68%','Cobre: 2580 mcg', '287% (Supera la IDR)','Zinc: 7 mg', '100%'],
             featuresColumn: ['Información nutricional por ingesta diaria (1 sobre por día)', '% IDR cubierto'],
             featuresRow: ['Fórmula A', 'Fórmula B', 'Fórmula C', 'Fórmula D', 'Fórmula E', 'Fórmula F', 'Fórmula G', 'Fórmula H', 'Fórmula I', 'Fórmula J', 'Fórmula K', 'Fórmula L', 'Fórmula M'], 
@@ -91,7 +91,7 @@ const productos = {
             prospectoLink: '../multimedia/prospectos/stopHungry.pdf',
         },
         { 
-            img: '../multimedia/veg12.png', titleImg: '../multimedia/logos/logo.veg12.png', desc: 'Suplemento dietario a base de Vitamina B12',
+            img: '../multimedia/veg12.png', titleImg: '../multimedia/logos/logo.veg12.png', desc: 'Suplemento dietario Vitamina B12',
             features: ['Vitamina B12: 3000 mg', '125.000% IRD (Supera la IDR)'],
             featuresColumn: ['Información nutricional por 1 comprimido', '% IDR cubierto'],
             featuresRow: ['Fórmula A', 'Fórmula B'], 
@@ -103,7 +103,7 @@ const productos = {
             prospectoLink: '../multimedia/prospectos/veg12.pdf',
         },
         { 
-            img: '../multimedia/vitaminaC1.png', titleImg: '../multimedia/logos/logo.vitaminac.png', desc: 'Suplemento dietario a base de Vitamina C',
+            img: '../multimedia/vitaminaC1.png', titleImg: '../multimedia/logos/logo.vitaminac.png', desc: 'Suplemento dietario Vitamina C',
             features: ['Vitamina C: 1000 mg', '2.222% IRD (Supera la IDR)'],
             featuresColumn: ['Composición nutricional por porción (3,4 g)', '% IDR cubierto'],
             featuresRow: ['Fórmula A'], 
@@ -331,7 +331,7 @@ function showCarousel(category) {
             // Agregar el enlace para redirigir al detalle del producto
             col.innerHTML = `<a href="producto.html?category=${category}&index=${j}">
                     <img src="${product.img}" alt="${product.title}" class="img-fluid">
-                    <img src="${product.titleImg}" alt="${product.title}" class="img-fluid mt-2"> <!-- Imagen para el título -->
+                    <img src="${product.titleImg}" alt="${product.title}" class="img-fluid mt-2 logo">
                     <p>${product.desc}</p>
                 </a>
             `;
