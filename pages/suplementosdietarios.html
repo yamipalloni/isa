@@ -6,8 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Posicionamiento SEO -->
-    <meta name="description"
-        content="Respaldados por estándares internacionales de calidad y seguridad. .">
+    <meta name="description" content="Respaldados por estándares internacionales de calidad y seguridad. ">
     <!-- vincular con font awesome para íconos-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -24,7 +23,7 @@
     <link rel="stylesheet" href="../css/estilos.css">
         <!-- vincular con JS-->
         <script defer src="carrusel.productos.js"></script>
-    <title> Productos ISA </title>
+    <title> Suplementos dietarios | Productos ISA </title>
 </head>
 
 <body>
@@ -33,7 +32,7 @@
         <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="../multimedia/logo.navbar2.png" alt="ISA"
-                    style="width: 15%"></a>
+                        style="width: 15%"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
@@ -64,65 +63,34 @@
 
     <main>
 
-        <!-- Hero Section con Imagen de Portada y Texto Lateral Derecho -->
-        <section
-            class="hero-section-productos position-relative text-center d-flex align-items-center justify-content-center"
-            style="background-image: url('../multimedia/imagenPortadaProductos.png'); background-size: cover; background-position: center; height: 500px;">
-            <!-- Caja de contenido sobre la imagen con fondo gris -->
-            <div class="container position-relative text-white wow animate__animated animate__bounceInRight">
-                <div class="row align-items-center h-100">
-                    <!-- Caja contenedora con fondo gris y la imagen lateral -->
-                    <div class="col-md-6 text-start-productos">
-                        <h1 class="display-4-productos">Nuestros productos</h1>
-                        <p class="lead-productos">Respaldados por estándares internacionales de calidad y seguridad.         </p>
-                    </div>
+        <!-- Hero Section  -->
 
-                    <!-- Imagen lateral con efecto zoom en escritorio -->
-                    <div class="col-md-6 position-relative p-0">
-                        <img src="../multimedia/packs.Productos.png" alt="Imagen lateral"
-                            class="img-fluid h-100 w-100 object-fit-cover zoom-image-productos">
-                    </div>
-                </div>
-            </div>
+        <section class="hero-section text-center py-5">
+            <img src="../multimedia/imagenPortadaProductos.png" alt="Suplementos Dietarios" class="img-fluid">
+            <h1 class="mt-3">Suplementos Dietarios</h1>
         </section>
 
 
-        <section class="container text-center py-5 wow animate__animated animate__bounceInLeft" id="productos">
-            <h2 class="fw-bold mb-3">Conocé toda nuestra línea</h2>
-        
-            <!-- Productos -->
-            <div class="row justify-content-center">
-                <div class="col-6 col-md-4 mb-4 wow animate__animated animate__bounceIn" data-wow-delay="0.2s">
-                    <a href="./suplementosdietarios.html?category=suplementosdietarios">
-                        <div class="division-icon mb-2">
-                            <img src="../multimedia/suplementos.dietarios.png" alt="Suplementos Dietarios" class="img-fluid">
-                        </div>
-                        <h5 class="fw-bold-productos">Suplementos dietarios</h5>
-                        <div class="divider-1 mt-2" style="width: 40px; height: 4px; margin: 0 auto;"></div>
-                    </a>
-                </div>
-                <div class="col-6 col-md-4 mb-4 wow animate__animated animate__bounceIn" data-wow-delay="0.4s">
-                    <a href="./medicamentosventalibre.html?category=medicamentosventalibre">
-                        <div class="division-icon mb-2">
-                            <img src="../multimedia/venta.libre.png" alt="Medicamentos de Venta Libre" class="img-fluid">
-                        </div>
-                        <h5 class="fw-bold-productos">Medicamentos de Venta Libre</h5>
-                        <div class="divider-2 mt-2" style="width: 40px; height: 4px; margin: 0 auto;"></div>
-                    </a>
-                </div>
-                <div class="col-6 col-md-4 mb-4 wow animate__animated animate__bounceIn" data-wow-delay="0.6s">
-                    <a href="./medicamentosventabajoreceta.html?category=medicamentosventabajoreceta">
-                        <div class="division-icon mb-2">
-                            <img src="../multimedia/venta.bajoreceta.png" alt="Medicamentos de Venta Bajo Receta" class="img-fluid">
-                        </div>
-                        <h5 class="fw-bold-productos">Medicamentos de Venta Bajo Receta</h5>
-                        <div class="divider-3 mt-2" style="width: 40px; height: 4px; margin: 0 auto;"></div>
-                    </a>
-                </div>
+<!-- Carrusel -->
+<section class="bg-gray-carrusel w-100 py-4 overflow-hidden">
+    <div class="container mt-4" id="productosCarousel" style="display: none;">
+        <div id="productosCarouselInner" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner-productos" id="carouselItems">
+                <!-- Items del carrusel generados por JavaScript -->
             </div>
-        </section>
-        
 
+            <!-- Controles del carrusel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#productosCarouselInner" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#productosCarouselInner" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+</section>
 
 
         <!--Cierre página-->

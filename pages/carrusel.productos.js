@@ -1,7 +1,6 @@
-
 // Productos para cada categoría
 const productos = {
-    suplementosDietarios: [
+    suplementosdietarios: [
         {
             img: '../multimedia/cartiflex.png',
             titleImg: '../multimedia/logos/logo.catiflex.png',
@@ -139,7 +138,7 @@ const productos = {
             prospectoLink: '../multimedia/prospectos/zentro-max-sobres.pdf',
         },
     ],
-    ventaLibre: [
+    medicamentosventalibre: [
         { 
             img: '../multimedia/algistop.png', titleImg: '../multimedia/logos/logo.algistop.png', desc: 'Antialérgico',
             features: ['Loratadina', '10 mg','Celulosa microcristalina, Almidón Glicolato de Sodio, Lactosa, Dióxido de Silicio Coloidal, Estearato de Magnesio, Azul brillante laca alumínica', 'Excipientes'],
@@ -224,7 +223,7 @@ const productos = {
             prospectoLink: '../multimedia/prospectos/paracetamol-isa-un-gramo.pdf',
         },
     ],
-    medicamentos: [
+    medicamentosventabajoreceta: [
         { 
             img: '../multimedia/atorvastatina10.png', titleImg: '../multimedia/logos/logo.10atorvastanina.png', desc: 'Reduce el colesterol',
             features: ['Atorvastatina (como Atorvastatina cálcica) ', '10 mg','Carbonato de calcio, celulosa microcristalina, lactosa, croscarmelosa sódica, polisorbato 80, hidroxipropilcelulosa, estearato de magnesio.', 'Excipientes'],
@@ -301,18 +300,31 @@ const productos = {
 };
 
 
+
 // Variable para almacenar la categoría actual
 let currentCategory = null;
 
+// Función para obtener la categoría desde la URL
+function getCategoryFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('category'); // Ejemplo: ?category=suplementosDietarios
+}
+
 // Función para mostrar el carrusel según la categoría seleccionada
 function showCarousel(category) {
-    currentCategory = category; // Almacenar la categoría actual
     const carouselItems = document.getElementById('carouselItems');
     carouselItems.innerHTML = ''; // Limpiar items anteriores del carrusel
+
+    // Validar si existen productos para la categoría seleccionada
+    if (!productos[category]) {
+        console.error('Categoría no encontrada:', category);
+        return;
+    }
 
     const products = productos[category];
     const productsPerRow = window.innerWidth < 768 ? 2 : 4; // 2 productos para móviles, 4 para escritorio
 
+    // Crear los items del carrusel
     for (let i = 0; i < products.length; i += productsPerRow) {
         const item = document.createElement('div');
         item.classList.add('carousel-item');
@@ -322,14 +334,15 @@ function showCarousel(category) {
         const row = document.createElement('div');
         row.classList.add('row', 'justify-content-center');
 
-        // Agregar productos en la fila según el tamaño de la pantalla
+        // Agregar productos en la fila
         for (let j = i; j < i + productsPerRow && j < products.length; j++) {
             const product = products[j];
             const col = document.createElement('div');
-            col.classList.add('col-6', 'col-md-3', 'text-center'); // 6 col (2 por fila en mobile), 3 col (4 por fila en desktop)
+            col.classList.add('col-6', 'col-md-3', 'text-center'); // 6 col para móvil, 3 col para escritorio
 
-            // Agregar el enlace para redirigir al detalle del producto
-            col.innerHTML = `<a href="producto.html?category=${category}&index=${j}">
+            // Crear el contenido del producto
+            col.innerHTML = `
+                <a href="producto.html?category=${category}&index=${j}">
                     <img src="${product.img}" alt="${product.title}" class="img-fluid">
                     <img src="${product.titleImg}" alt="${product.title}" class="img-fluid mt-2 logo">
                     <p>${product.desc}</p>
@@ -347,12 +360,23 @@ function showCarousel(category) {
     carouselContainer.scrollIntoView({ behavior: 'smooth' }); // Desplazarse hacia el carrusel
 }
 
-// Evento para actualizar el carrusel al cambiar el tamaño de la pantalla
-window.addEventListener('resize', () => {
-    if (currentCategory) {
-        showCarousel(currentCategory); // Actualizar el carrusel con la categoría actual
+// Evento para cargar la categoría al cargar la página
+document.addEventListener('DOMContentLoaded', () => {
+    const category = getCategoryFromUrl(); // Obtener categoría desde la URL
+    if (category) {
+        showCarousel(category); // Mostrar el carrusel de la categoría
     }
 });
+
+// Evento para actualizar el carrusel al cambiar el tamaño de la pantalla
+window.addEventListener('resize', () => {
+    const category = getCategoryFromUrl(); // Volver a obtener la categoría
+    if (category) {
+        showCarousel(category); // Actualizar el carrusel con la categoría actual
+    }
+});
+
+
 
 // Descripción de cada producto
 // Obtener parámetros de la URL
