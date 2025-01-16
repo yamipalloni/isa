@@ -64,7 +64,7 @@
     <main>
 
         <!-- Hero Section  -->
-        <section class="hero-section-suplementos position-relative zoom-image-suplementos">
+        <section class="hero-section-suplementos position-relative">
             <!-- Caja de contenido sobre la imagen con fondo gris -->
             <div class="container position-relative text-white wow animate__animated animate__bounceInRight">
                 <div class="row align-items-center h-100">
@@ -109,40 +109,62 @@
                 </div>
             </div>
         </section>
+        <!-- Separador Superior -->
+        <div class="section-separator"></div>
 
+        <!-- Hero Section con Video de Fondo PLanta Producción -->
+        <section class="hero-section position-relative text-center d-flex align-items-center justify-content-center">
+            <!-- Video de fondo -->
+            <video autoplay loop muted playsinline class="position-absolute w-100 h-100" style="object-fit: cover;">
+                <source src="../multimedia/plantaProduccion.mp4" type="video/mp4">
+                Tu navegador no soporta video HTML5.
+            </video>
 
-        <!--Cierre página-->
-        <footer>
-            <div class="row">
-                <div class="col-sm-1 col-md-6">
-                    <img src="../multimedia/logo1.png" alt="Laboratorio" class="mx-auto d-block" style="width:20%">
-                </div>
-                <div class="col-sm-1 col-md-6 cierre">
-                    <ul class="footer-links">
-                        <li><a href="http://pedidos.isalaboratorios.com.ar/pedidos/site/pLogin.php">Intranet</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
-                    </ul>
-                    <h8 class="wow animate__animated animate__rollIn">Todos los derechos reservados</h8>
-                </div>
+            <!-- Contenido sobre el video -->
+            <div class="container position-relative text-white wow animate__animated animate__bounce">
+                <h1 class="display-4-index">Innovación</h1>
+                <p class="lead-index">Tu visión, nuestra experiencia. Juntos, creamos salud.</p>
+                <a href="./planta.html" class="btn btn-primary mt-3 ver-novedades">Nuestra planta</a>
             </div>
-        </footer>
 
-        <!--Subir de la página-->
-        <a href="#" class="subir"><i class="fa-solid fa-upload"></i></a>
+            <!-- Separador Inferior -->
+            <div class="section-separator"></div>
 
-        <!-- inicia sript de WOW (antes de cerrar body)-->
-        <script src="../utilidades/js/wow.min.js"></script>
-        <script>new WOW().init();</script>
-        <!-- inicia sript de BS (antes de cerrar body)-->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-            crossorigin="anonymous"></script>
 
-        <!-- inicia sript de productos -->
-        <script src="carrusel.productos.js"></script>
+    </main>
+
+    <!--Cierre página-->
+    <footer>
+        <div class="row">
+            <div class="col-sm-1 col-md-6">
+                <img src="../multimedia/logo1.png" alt="Laboratorio" class="mx-auto d-block" style="width:20%">
+            </div>
+            <div class="col-sm-1 col-md-6 cierre">
+                <ul class="footer-links">
+                    <li><a href="http://pedidos.isalaboratorios.com.ar/pedidos/site/pLogin.php">Intranet</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+                <h8 class="wow animate__animated animate__rollIn">Todos los derechos reservados</h8>
+            </div>
+        </div>
+    </footer>
+
+    <!--Subir de la página-->
+    <a href="#" class="subir"><i class="fa-solid fa-upload"></i></a>
+
+    <!-- inicia sript de WOW (antes de cerrar body)-->
+    <script src="../utilidades/js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <!-- inicia sript de BS (antes de cerrar body)-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <!-- inicia sript de productos -->
+    <script src="carrusel.productos.js"></script>
 </body>
 
 </html>

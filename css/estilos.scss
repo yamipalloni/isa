@@ -369,10 +369,6 @@ html{
     display: flex;
 }
 
-.zoom-image-suplementos {
-    animation: zoomEffect 10s ease-in-out infinite; /* Animación continua de 5 segundos */
-}
-
 .display-4-suplementos {
     font-family: $font1;
     color: $color5;
@@ -389,10 +385,6 @@ html{
     display: flex;
 }
 
-.zoom-image-medicamentosventalibre {
-    animation: zoomEffect 10s ease-in-out infinite; /* Animación continua de 5 segundos */
-}
-
 .display-4-medicamentosventalibre {
     font-family: $font1;
     color: $color5;
@@ -407,10 +399,6 @@ html{
     height: 500px;
     justify-content:center;
     display: flex;
-}
-
-.zoom-image-medicamentos {
-    animation: zoomEffect 10s ease-in-out infinite; /* Animación continua de 5 segundos */
 }
 
 .display-4-medicamentos {
