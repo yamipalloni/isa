@@ -231,50 +231,116 @@ html {
     transform: scale(1.05);
   }
 }
+.hero-section-productos {
+  background-image: url("../multimedia/imagenPortadaProductos.png");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
 /* Estilo para el zoom in suave en la imagen */
 @keyframes zoomEffect {
   0% {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.025);
   }
   100% {
     transform: scale(1);
   }
 }
 .zoom-image-productos {
-  animation: zoomEffect 5s ease-in-out infinite; /* Animación continua de 5 segundos */
+  animation: zoomEffect 10s ease-in-out infinite; /* Animación continua de 5 segundos */
 }
 
-/* En versiones móviles, ajustamos el layout */
-@media (max-width: 767px) {
-  .hero-section-productos {
-    background-image: none; /* Elimina cualquier imagen de fondo en móviles */
-    padding: 20px; /* Añade un margen interno */
-  }
-  .hero-section-productos .row {
-    flex-direction: column-reverse; /* Cambia el orden de los elementos */
-    align-items: center; /* Centra los elementos */
-    text-align: center; /* Asegura que el texto esté centrado en móviles */
-  }
-  /* Estilo para el texto */
-  .text-start-productos {
-    margin-bottom: 20px; /* Añade espacio entre el texto y la imagen */
-  }
-  /* Imagen lateral ajustada */
-  .zoom-image-productos {
-    width: 100%; /* Asegura que ocupe todo el ancho disponible */
-    height: auto; /* Mantiene las proporciones originales */
-    -o-object-fit: contain;
-       object-fit: contain; /* Evita que la imagen se deforme */
-  }
-  /* Contenedor de la imagen */
-  .hero-section-productos .col-md-6:last-child {
-    padding: 0; /* Elimina relleno adicional */
-    width: 100%; /* Asegura que ocupe el ancho completo */
-  }
+.display-4-productos {
+  font-family: "Raleway", serif;
+  color: #2A3F92;
+  text-align: left;
 }
+
+.lead-productos {
+  font-family: "Raleway", serif;
+  color: #2A3F92;
+  text-align: left;
+}
+
+.container-fluid-azul {
+  background-color: #2A3F92;
+  color: #ffffff;
+  font-family: "Raleway", serif;
+  text-align: center;
+  height: 80px;
+  padding: 20px;
+}
+
+.pagination {
+  font-family: "DM Sans", sans-serif;
+  color: rgb(44, 44, 44);
+}
+
+.hero-section-suplementos {
+  background-image: url("../multimedia/imagenPortadaProductos.png");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  justify-content: center;
+  display: flex;
+}
+
+.zoom-image-suplementos {
+  animation: zoomEffect 10s ease-in-out infinite; /* Animación continua de 5 segundos */
+}
+
+.display-4-suplementos {
+  font-family: "Raleway", serif;
+  color: #2A3F92;
+  text-align: left;
+}
+
+.hero-section-medicamentosventalibre {
+  background-image: url("../multimedia/imagenPortadaProductos.png");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  justify-content: center;
+  display: flex;
+}
+
+.zoom-image-medicamentosventalibre {
+  animation: zoomEffect 10s ease-in-out infinite; /* Animación continua de 5 segundos */
+}
+
+.display-4-medicamentosventalibre {
+  font-family: "Raleway", serif;
+  color: #2A3F92;
+  text-align: left;
+}
+
+.hero-section-medicamentos {
+  background-image: url("../multimedia/imagenPortadaProductos.png");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  justify-content: center;
+  display: flex;
+}
+
+.zoom-image-medicamentos {
+  animation: zoomEffect 10s ease-in-out infinite; /* Animación continua de 5 segundos */
+}
+
+.display-4-medicamentos {
+  font-family: "Raleway", serif;
+  color: #2A3F92;
+  text-align: left;
+}
+
 .display-4-productos {
   font-family: "Raleway", serif;
   color: #2A3F92;
@@ -346,7 +412,6 @@ html {
 }
 
 .bg-gray-carrusel {
-  background-image: url("../multimedia/fondo.CarruselProductos.png");
   background-size: cover;
   background-position: center;
   padding-bottom: 40px;
@@ -558,6 +623,17 @@ button.btn-secondary {
     transform: scale(1);
   }
 }
+.hero-section-contacto {
+  background-image: url("../multimedia/imagenPlanta.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
 .zoom-image-contacto {
   animation: zoomEffect 10s ease-in-out infinite; /* Animación continua de 5 segundos */
 }

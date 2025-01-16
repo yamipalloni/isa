@@ -21,8 +21,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- vincular con CSS-->
     <link rel="stylesheet" href="../css/estilos.css">
-        <!-- vincular con JS-->
-        <script defer src="carrusel.productos.js"></script>
+    <!-- vincular con JS-->
+    <script defer src="carrusel.productos.js"></script>
     <title> Suplementos dietarios | Productos ISA </title>
 </head>
 
@@ -64,33 +64,51 @@
     <main>
 
         <!-- Hero Section  -->
+        <section class="hero-section-suplementos position-relative zoom-image-suplementos">
+            <!-- Caja de contenido sobre la imagen con fondo gris -->
+            <div class="container position-relative text-white wow animate__animated animate__bounceInRight">
+                <div class="row align-items-center h-100">
+                    <!-- Caja contenedora con fondo gris y la imagen lateral -->
+                    <div class="col-md-6 text-start-suplementos">
+                        <h1 class="display-4-suplementos"> Suplementos Dietarios</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <section class="hero-section text-center py-5">
-            <img src="../multimedia/imagenPortadaProductos.png" alt="Suplementos Dietarios" class="img-fluid">
-            <h1 class="mt-3">Suplementos Dietarios</h1>
+        <section class="pagination">
+            <div class="container mt-3">
+                <h2>Nuestra línea de productos</h2>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="./productos.html">Productos</a></li>
+                    <li class="breadcrumb-item active">Suplementos Dietatarios</li>
+                </ul>
+            </div>
         </section>
 
 
-<!-- Carrusel -->
-<section class="bg-gray-carrusel w-100 py-4 overflow-hidden">
-    <div class="container mt-4" id="productosCarousel" style="display: none;">
-        <div id="productosCarouselInner" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner-productos" id="carouselItems">
-                <!-- Items del carrusel generados por JavaScript -->
-            </div>
+        <!-- Carrusel -->
+        <section class="bg-gray-carrusel w-100 py-4 overflow-hidden">
+            <div class="container mt-4" id="productosCarousel" style="display: none;">
+                <div id="productosCarouselInner" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner-productos" id="carouselItems">
+                        <!-- Items del carrusel generados por JavaScript -->
+                    </div>
 
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#productosCarouselInner" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#productosCarouselInner" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-            </button>
-        </div>
-    </div>
-</section>
+                    <!-- Controles del carrusel -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productosCarouselInner"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productosCarouselInner"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </section>
 
 
         <!--Cierre página-->
