@@ -357,7 +357,7 @@ function showCarousel(category) {
 
     const carouselContainer = document.getElementById('productosCarousel');
     carouselContainer.style.display = 'block'; // Mostrar el carrusel
-    carouselContainer.scrollIntoView({ behavior: 'smooth' }); // Desplazarse hacia el carrusel
+    // carouselContainer.scrollIntoView({ behavior: 'smooth' }); // Desplazarse hacia el carrusel
 }
 
 // Evento para cargar la categoría al cargar la página
