@@ -137,6 +137,18 @@ const productos = {
             clarifiedtext: 'Suplemento Dietario. Suplementa dietas insuficientes. Ante cualquier duda consulte a su médico y/o farmacéutico.',
             prospectoLink: '../multimedia/prospectos/zentro-max-sobres.pdf',
         },
+        { 
+            img: '../multimedia/zentroMagnesio.png', titleImg: '../multimedia/logos/logo.zentromagnesio.png', desc: 'Citrato de Magnesio',
+            features: ['Citrato de Magnesio: 240 mg', '(19 - 65 años): 92% IDR / (> 65 años): 104% Supera la IDR',],
+            featuresColumn: ['Cada comprimido contiene:', '% IDR cubierto'],
+            featuresRow: ['Fórmula A'], 
+            textAbove: 'Tomar 2 comprimidos recubiertos por día, ingerido con abundante agua.',
+            textAbove2: 'Comprimidos recubiertos.',
+            tabletitleproduct: 'Suplemento dietario a base de Magnesio',
+            textBelow: 'No aporta cantidades significativas de valor energético, carbohidratos, proteínas, grasas, fibra alimentaria y sodio. (*)% Valores diarios con base a una dieta de 2.000 kcal u 8.400 kj. Sus valores diarios pueden ser mayores o menores dependiendode sus necesidades energéticas.',
+            clarifiedtext: 'Suplemento Dietario. Suplementa dietas insuficientes. Ante cualquier duda consulte a su médico y/o farmacéutico.',
+            prospectoLink: '../multimedia/prospectos/zentro-magnesio.pdf',
+        },
     ],
     medicamentosventalibre: [
         { 
