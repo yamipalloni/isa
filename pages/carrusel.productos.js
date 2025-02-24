@@ -87,7 +87,7 @@ const productos = {
             tabletitleproduct: 'Suplemento Dietario ideal para ayuno intermitente y dietas hipocalóricas',
             textBelow: 'No aporta cantidades significativas de valor energético, carbohidratos, proteínas, grasas, fibra alimentaria y sodio. (*)% Valores diarios con base a una dieta de 2.000 kcal u 8.400 kj.',
             clarifiedtext: 'Suplemento Dietario. Suplementa dietas insuficientes. Ante cualquier duda consulte a su médico y/o farmacéutico.',
-            prospectoLink: '../multimedia/prospectos/stopHungry.pdf',
+            prospectoLink: '../multimedia/prospectos/stop-hungry.pdf',
         },
         { 
             img: '../multimedia/veg12.png', titleImg: '../multimedia/logos/logo.veg12.png', desc: 'Suplemento dietario Vitamina B12',
@@ -99,7 +99,7 @@ const productos = {
             tabletitleproduct: 'Suplemento Dietario a base de vitamina B12',
             textBelow: '(*)% Valores diarios con base a una dieta de 2.000 kcal u 8.400 kJ. No aporta cantidades significativas de valor energético, carbohidratos, proteínas, grasas, fibra alimentaria y sodio.',
             clarifiedtext: 'Suplemento Dietario. Suplementa dietas insuficientes. Ante cualquier duda consulte a su médico y/o farmacéutico.',
-            prospectoLink: '../multimedia/prospectos/veg12.pdf',
+            prospectoLink: '../multimedia/prospectos/veg-12.pdf',
         },
         { 
             img: '../multimedia/vitaminaC1.png', titleImg: '../multimedia/logos/logo.vitaminac.png', desc: 'Suplemento dietario Vitamina C',
@@ -222,18 +222,6 @@ const productos = {
             clarifiedtext: 'Medicamento Venta Libre. Lea atentamente el prospecto. Ante la menor duda, consulte a su médico y/o farmacéutico.',
             prospectoLink: '../multimedia/prospectos/paracetamol-isa-500.pdf',
         },
-        { 
-            img: '../multimedia/paracetamol1g.png', titleImg: '../multimedia/logos/logo.paracetamol.png', desc: 'Analgésico, antifebril',
-            features: ['Paracetamol CD 90% (Equivalente a Paracetamol 1000 mg)', '1112 mg','Almidón pregelatinizado, Povidona (K-30), Acido esteárico.', 'Excipientes'],
-            featuresColumn: ['Cada comprimido contiene:', 'mg'],
-            featuresRow: ['Fórmula A', 'Fórmula B'], 
-            textAbove: 'Forma de uso: Adultos y niños mayores de 15 años: 1 comprimido de 1 a 3 veces por día. Las tomas deben estar espaciadas por no menos de 4 horas. No exceder de 4 comprimidos durante 24 horas. Dosis máxima: 4 g/día para un período de 10 días. Para un lapso de tiempo mayor: 2,6 g/día.',
-            textAbove2: 'Presentación: 24 comprimidos.',
-            tabletitleproduct: 'Analgésico. Antipirético.',
-            textBelow: 'ANTE CUALQUIER DUDA CONSULTE A SU MEDICO.',
-            clarifiedtext: 'Medicamento Venta Libre. Lea atentamente el prospecto. Ante la menor duda, consulte a su médico y/o farmacéutico.',
-            prospectoLink: '../multimedia/prospectos/paracetamol-isa-un-gramo.pdf',
-        },
     ],
     medicamentosventabajoreceta: [
         { 
@@ -295,6 +283,18 @@ const productos = {
             textBelow: 'ANTE CUALQUIER DUDA CONSULTE A SU MEDICO.',
             clarifiedtext: 'Medicamento venta bajo receta. Lea atentamente el prospecto. Ante la menor duda, consulte a su médico y/o farmacéutico.',
             prospectoLink: '../multimedia/prospectos/paracetamol-isa-un-gramo2.pdf', 
+        },
+        { 
+            img: '../multimedia/paracetamol1g.png', titleImg: '../multimedia/logos/logo.paracetamol.png', desc: 'Analgésico, antifebril',
+            features: ['Paracetamol CD 90% (Equivalente a Paracetamol 1000 mg)', '1112 mg','Almidón pregelatinizado, Povidona (K-30), Acido esteárico.', 'Excipientes'],
+            featuresColumn: ['Cada comprimido contiene:', 'mg'],
+            featuresRow: ['Fórmula A', 'Fórmula B'], 
+            textAbove: 'Forma de uso: Adultos y niños mayores de 15 años: 1 comprimido de 1 a 3 veces por día. Las tomas deben estar espaciadas por no menos de 4 horas. No exceder de 4 comprimidos durante 24 horas. Dosis máxima: 4 g/día para un período de 10 días. Para un lapso de tiempo mayor: 2,6 g/día.',
+            textAbove2: 'Presentación: 24 comprimidos.',
+            tabletitleproduct: 'Analgésico. Antipirético.',
+            textBelow: 'ANTE CUALQUIER DUDA CONSULTE A SU MEDICO.',
+            clarifiedtext: 'Medicamento Venta Libre. Lea atentamente el prospecto. Ante la menor duda, consulte a su médico y/o farmacéutico.',
+            prospectoLink: '../multimedia/prospectos/paracetamol-isa-un-gramo.pdf',
         },
         { 
             img: '../multimedia/quartier.png', titleImg: '../multimedia/logos/logo.quartier.png', desc: 'Tratamiento para la disfunción eréctil',
