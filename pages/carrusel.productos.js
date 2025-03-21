@@ -149,6 +149,18 @@ const productos = {
             clarifiedtext: 'Suplemento Dietario. Suplementa dietas insuficientes. Ante cualquier duda consulte a su médico y/o farmacéutico.',
             prospectoLink: '../multimedia/prospectos/zentro-magnesio.pdf',
         },
+        { 
+            img: '../multimedia/creatinaSticks.png', titleImg: '../multimedia/logos/logo.creatinaSticks.png', desc: 'Creatina Monohidrato',
+            features: ['Creatina Monohidrato: 5g', 'Valor energético: 20 kcal (1 % IDR Adultos)',],
+            featuresColumn: ['Cada sobre contiene:', '% IDR cubierto'],
+            featuresRow: ['Fórmula A'], 
+            textAbove: 'Tomar 1 sobre diario, disolver el contenido del sobre en medio vaso de agua, agitar y beber.',
+            textAbove2: 'Sobres de 5 g en polvo.',
+            tabletitleproduct: 'Suplemento dietario a base de Creatina Monohidrato',
+            textBelow: 'No aporta cantidades significativas de valor energético, carbohidratos, proteínas, grasas, fibra alimentaria y sodio. (*)% Valores diarios con base a una dieta de 2.000 kcal u 8.400 kj. Sus valores diarios pueden ser mayores o menores dependiendode sus necesidades energéticas.',
+            clarifiedtext: 'Suplemento Dietario. Suplementa dietas insuficientes. Ante cualquier duda consulte a su médico y/o farmacéutico.',
+            prospectoLink: '../multimedia/prospectos/creatina-sticks.pdf',
+        },
     ],
     medicamentosventalibre: [
         { 
