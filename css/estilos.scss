@@ -14,16 +14,16 @@ $alto2: 500px;
 //fonts
 $font1: 'Raleway', serif;
 $font2: 'DM Sans', sans-serif;
-$bold1:700;
+$bold1: 700;
 $bold2: 500;
 // paleta colores
-$color1:#C3C4C6;
-$color2:#192947;
-$color3:#CFF0FC;
-$color4:#2295D3;
-$color5:#2A3F92;
-$color6:#ffffff;
-$color7:rgb(44, 44, 44);
+$color1: #C3C4C6;
+$color2: #192947;
+$color3: #CFF0FC;
+$color4: #2295D3;
+$color5: #2A3F92;
+$color6: #ffffff;
+$color7: rgb(44, 44, 44);
 //dimensiones
 $size1: 100%;
 $size2: 50%;
@@ -31,13 +31,13 @@ $size3: 20px;
 $size4: 50px;
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -47,9 +47,11 @@ html{
     font-family: $font1;
     font-size: calc($size3 - 2px);
     display: flex;
-    justify-content: space-between; /* Logo al inicio e ícono al final */
+    justify-content: space-between;
+    /* Logo al inicio e ícono al final */
     align-items: center;
-    padding: 0 1rem; /* Ajusta según tu diseño */
+    padding: 0 1rem;
+    /* Ajusta según tu diseño */
 }
 
 .navbar-brand {
@@ -71,15 +73,20 @@ html{
     margin: 0;
 
     .nav-item {
-        display: flex; /* Asegura que el contenido y el separador estén en la misma línea */
+        display: flex;
+        /* Asegura que el contenido y el separador estén en la misma línea */
         align-items: center;
-        padding: 0 1rem; /* Espaciado horizontal entre los elementos */
+        padding: 0 1rem;
+        /* Espaciado horizontal entre los elementos */
 
         /* Agregar un palito separador */
         &::after {
-            content: "|"; /* El separador */
-            margin-left: 1rem; /* Espaciado a la izquierda del separador */
-            color: $color6; /* Cambia por el color deseado */
+            content: "|";
+            /* El separador */
+            margin-left: 1rem;
+            /* Espaciado a la izquierda del separador */
+            color: $color6;
+            /* Cambia por el color deseado */
         }
 
         /* Elimina el palito del último elemento */
@@ -110,9 +117,12 @@ html{
 @media (max-width: 768px) {
     .nav-list {
         align-items: end;
-        flex-direction: column; /* Cambiar a vertical */
+        flex-direction: column;
+
+        /* Cambiar a vertical */
         .nav-item::after {
-            content: none; /* Elimina el separador */
+            content: none;
+            /* Elimina el separador */
         }
     }
 
@@ -122,12 +132,14 @@ html{
 
         .navbar-brand {
             img {
-                width: auto; /* Tamaño adaptable si es necesario */
+                width: auto;
+                /* Tamaño adaptable si es necesario */
                 margin-left: 0%;
                 max-height: 180px;
                 max-width: 250px;
             }
         }
+
         .navbar-toggler {
             align-self: center;
         }
@@ -140,29 +152,31 @@ html{
     background-size: cover;
     padding: 100px 0;
 }
+
 .card-product {
     transition: transform 0.3s ease;
 }
+
 .card-product:hover {
     transform: scale(1.05);
 }
 
-.ver-novedades{
+.ver-novedades {
     background-color: $color5 !important;
     border-color: $color6;
 }
 
-.ver-novedades:hover{
+.ver-novedades:hover {
     background-color: $color1 !important;
     color: $color5 !important;
 }
 
-.display-4-index{
+.display-4-index {
     font-family: $font1;
     font-size: $size4;
 }
 
-.lead-index{
+.lead-index {
     font-family: $font1;
     font-size: $size3;
 }
@@ -173,26 +187,26 @@ html{
     color: $color5;
 }
 
-#sobre-nosotros{
-        font-family: $font1;
+#sobre-nosotros {
+    font-family: $font1;
 }
 
-#sobre-nosotros{
-    p{
+#sobre-nosotros {
+    p {
         font-size: calc($size3 - 2px);
     }
 }
 
 //** index **// //** Beneficios //** 
 
-.beneficios{
-    h4{
+.beneficios {
+    h4 {
         font-family: $font1;
     }
 }
 
-.beneficios{
-    p{
+.beneficios {
+    p {
         font-family: $font2;
     }
 }
@@ -217,10 +231,13 @@ html{
     /* Punto de corte para tablets y dispositivos medianos */
     @media (max-width: 768px) {
         h3 {
-            font-size: 1.4rem; /* Ajusta el tamaño para tablets */
+            font-size: 1.4rem;
+            /* Ajusta el tamaño para tablets */
         }
+
         p {
-            font-size: 1rem; /* Ajusta el tamaño para tablets */
+            font-size: 1rem;
+            /* Ajusta el tamaño para tablets */
         }
     }
 
@@ -229,6 +246,7 @@ html{
         h3 {
             font-size: 1.2rem;
         }
+
         p {
             font-size: 0.9rem;
         }
@@ -247,17 +265,21 @@ html{
 .animate-zoom {
     animation: zoomIn 3s infinite alternate;
 }
+
 @keyframes zoomIn {
     0% {
         transform: scale(1);
-        }
-        50% {
+    }
+
+    50% {
         transform: scale(1.3);
-        }
-        100% {
+    }
+
+    100% {
         transform: scale(1);
-        }
+    }
 }
+
 .section-separator {
     height: 5px;
     background-color: $color5;
@@ -266,13 +288,13 @@ html{
 }
 
 
-.ver-producto{
+.ver-producto {
     background-color: $color5 !important;
     border-color: $color6;
     margin-bottom: 10px;
 }
 
-.ver-producto:hover{
+.ver-producto:hover {
     background-color: $color1 !important;
     color: $color5 !important;
 }
@@ -288,9 +310,12 @@ html{
 
 /* Definición de la animación de latido */
 @keyframes latido {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.05);
     }
@@ -302,35 +327,38 @@ html{
 
 //** Productos **// Portada
 
-    
+
 .hero-section-productos {
     background-image: url('../multimedia/imagenPortadaProductos.png');
     background-size: cover;
     background-position: center;
     height: 500px;
-    text-align:center;
-    justify-content:center;
+    text-align: center;
+    justify-content: center;
     display: flex;
     align-items: center;
 }
 
 
 
-   /* Estilo para el zoom in suave en la imagen */
+/* Estilo para el zoom in suave en la imagen */
 @keyframes zoomEffect {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.025);
     }
+
     100% {
         transform: scale(1);
     }
 }
 
 .zoom-image-productos {
-    animation: zoomEffect 10s ease-in-out infinite; /* Animación continua de 5 segundos */
+    animation: zoomEffect 10s ease-in-out infinite;
+    /* Animación continua de 5 segundos */
 }
 
 .display-4-productos {
@@ -365,7 +393,7 @@ html{
     background-size: cover;
     background-position: center;
     height: 500px;
-    justify-content:center;
+    justify-content: center;
     display: flex;
 }
 
@@ -381,7 +409,7 @@ html{
     background-size: cover;
     background-position: center;
     height: 500px;
-    justify-content:center;
+    justify-content: center;
     display: flex;
 }
 
@@ -397,7 +425,7 @@ html{
     background-size: cover;
     background-position: center;
     height: 500px;
-    justify-content:center;
+    justify-content: center;
     display: flex;
 }
 
@@ -514,8 +542,10 @@ html{
 }
 
 .carousel-inner-productos .row {
-    margin: 0; /* Elimina márgenes laterales que puedan causar desbordamiento */
-    justify-content: center; /* Asegura que los productos estén centrados */
+    margin: 0;
+    /* Elimina márgenes laterales que puedan causar desbordamiento */
+    justify-content: center;
+    /* Asegura que los productos estén centrados */
 }
 
 .logo {
@@ -524,13 +554,16 @@ html{
 
 @media (max-width: 768px) {
     .carousel-inner-productos .row .col-6 {
-        max-width: 50%; /* Cada producto ocupa el 50% del ancho */
-        flex: 0 0 50%; /* Asegura que se mantengan dos productos por fila */
+        max-width: 50%;
+        /* Cada producto ocupa el 50% del ancho */
+        flex: 0 0 50%;
+        /* Asegura que se mantengan dos productos por fila */
     }
 }
 
 #carouselItems:hover {
-    transform: scale(1.1); /* Zoom estático al hacer hover */
+    transform: scale(1.1);
+    /* Zoom estático al hacer hover */
 }
 
 
@@ -540,9 +573,11 @@ html{
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.02);
     }
+
     100% {
         transform: scale(1);
     }
@@ -550,34 +585,43 @@ html{
 
 .product-zoom {
     animation: heartbeat 1.5s infinite;
-    transition: transform 0.3s ease; /* Para suavizar cuando se detiene el hover */
+    transition: transform 0.3s ease;
+    /* Para suavizar cuando se detiene el hover */
 }
 
 .product-zoom:hover {
-    animation: none; /* Opcional: detiene la animación continua al hacer hover */
-    transform: scale(1.1); /* Zoom estático al hacer hover */
+    animation: none;
+    /* Opcional: detiene la animación continua al hacer hover */
+    transform: scale(1.1);
+    /* Zoom estático al hacer hover */
 }
 
 
 .product-info1 {
     display: flex;
-    flex-direction: column; /* Cambia a diseño vertical */
-    align-items: center; /* Centra los elementos horizontalmente */
+    flex-direction: column;
+    /* Cambia a diseño vertical */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
 }
 
 #productTitleImg {
-    margin: 0 0 10px 0; /* Agrega un margen inferior para separar del producto */
-    width: 20%; /* Controla el ancho */
+    margin: 0 0 10px 0;
+    /* Agrega un margen inferior para separar del producto */
+    width: 20%;
+    /* Controla el ancho */
 }
 
 #productImage {
     margin: 0;
-    width: 50%; /* Controla el ancho */
+    width: 50%;
+    /* Controla el ancho */
 }
 
 button.btn-secondary {
     display: block;
-    margin: 0 auto 10px; /* Centra el botón y ajusta el margen inferior */
+    margin: 0 auto 10px;
+    /* Centra el botón y ajusta el margen inferior */
 }
 
 
@@ -587,49 +631,50 @@ button.btn-secondary {
         font-size: 1rem;
         font-family: $font1;
     }
-    
+
     #textabovetable2 {
         font-size: 0.9rem;
         margin-bottom: 1.5rem;
         font-family: $font1;
     }
-    
+
     #table-title-product {
         font-size: 1.2rem;
         font-weight: bold;
         margin-bottom: 1rem;
         font-family: $font1;
     }
-    
+
     .table {
         width: 100%;
         border-collapse: collapse;
         margin-bottom: 1.5rem;
 
-        th, td {
+        th,
+        td {
             border: 1px solid $color7;
             padding: 0.8rem;
             text-align: left;
         }
-        
+
         th {
             background-color: #f9f9f9;
         }
     }
-    
-    
+
+
     .blue-line {
         height: 1px;
         background-color: $color5; // Línea azul sólida
         margin: 1.5rem 0;
     }
-    
+
     #textbelowtable {
         font-size: 0.85rem;
         margin-bottom: 1rem;
         font-family: $font2;
     }
-    
+
     #clarified-text {
         font-size: 0.75rem;
         color: $color5;
@@ -638,11 +683,12 @@ button.btn-secondary {
     }
 }
 
-.product-detail{
-    background: linear-gradient(180deg,rgb(255, 254, 254) 0%,$color1 100%);
+.product-detail {
+    background: linear-gradient(180deg, rgb(255, 254, 254) 0%, $color1 100%);
     margin-top: 0;
-    padding-bottom: 50px; /* separa del footer */
-    padding-top: 0;    
+    padding-bottom: 50px;
+    /* separa del footer */
+    padding-top: 0;
 }
 
 
@@ -684,45 +730,54 @@ button.btn-secondary {
     border: 2px solid $color5;
 }
 
-//** Nosotros **//
+//** Nosotros / planta**//
 
-.card-nosotros{
+.card-nosotros {
     padding: $size3;
-    h2{
+
+    h2 {
         font-family: $font1;
         color: $color7;
     }
 }
 
-.card-nosotros{
-    p{
-        font-family: $font2;
-        color: $color7;
+.gallery {
+    .image-wrapper {
+        overflow: hidden;
+        border-radius: 15px;
+        transition: transform 0.3s ease;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+            border-radius: 15px;
+        }
+
+        &:hover img {
+            transform: scale(1.1);
+        }
     }
+
+
 }
 
-.card-nosotros{
-    h4{
-        font-family: $font2;
-        color: $color7;
-    }
-}
 
-.card-body-nosotros{
-    background-color: $color1;
-    background: linear-gradient(180deg,rgb(255, 254, 254) 0%,$color1 100%),
-}
+
 
 
 // Contacto 
-   /* Estilo para el zoom in suave en la imagen */
-   @keyframes zoomEffect {
+/* Estilo para el zoom in suave en la imagen */
+@keyframes zoomEffect {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.025);
     }
+
     100% {
         transform: scale(1);
     }
@@ -733,14 +788,15 @@ button.btn-secondary {
     background-size: cover;
     background-position: center;
     height: 500px;
-    text-align:center;
-    justify-content:center;
+    text-align: center;
+    justify-content: center;
     display: flex;
     align-items: center;
 }
 
 .zoom-image-contacto {
-    animation: zoomEffect 10s ease-in-out infinite; /* Animación continua de 5 segundos */
+    animation: zoomEffect 10s ease-in-out infinite;
+    /* Animación continua de 5 segundos */
 }
 
 
@@ -762,10 +818,12 @@ button.btn-secondary {
 }
 
 .mapsfondo {
-    background: linear-gradient(180deg,rgb(255, 254, 254) 0%,$color1 100%),
+    background: linear-gradient(180deg, rgb(255, 254, 254) 0%, $color1 100%),
 }
+
 .cierre-contacto {
     font-family: $font1;
+
     h2 {
         margin-bottom: 20px;
     }
@@ -773,18 +831,21 @@ button.btn-secondary {
 
 //** Cierre página **//
 
-footer{
+footer {
     background-color: $color5;
     color: $color4;
     text-align: left;
     padding: $size3;
     font-family: $font1;
+
     .footer-links {
         list-style: none; // Elimina los puntos de la lista
         padding: 0; // Elimina el padding por defecto
         margin: 0;
+
         li {
             margin-bottom: 0; // Espaciado entre los elementos
+
             a {
                 text-decoration: none;
                 color: $color4;
@@ -800,16 +861,16 @@ footer{
 }
 
 
-.cierre{
+.cierre {
     text-align: left;
 }
 
 
-.logo-footer{
+.logo-footer {
     padding: $size3;
 }
 
-.subir{
+.subir {
     width: calc($size4 - 10px);
     height: calc($size4 - 10px);
     background-color: $color1;
@@ -821,10 +882,9 @@ footer{
     text-align: center;
     line-height: calc($size4 - 10px);
     font-size: $size3;
-        :hover{
+
+    :hover {
         color: $color1;
         background-color: $color5;
-        }
+    }
 }
-
-

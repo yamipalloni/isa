@@ -16,9 +16,11 @@ html {
   font-family: "Raleway", serif;
   font-size: 18px;
   display: flex;
-  justify-content: space-between; /* Logo al inicio e ícono al final */
+  justify-content: space-between;
+  /* Logo al inicio e ícono al final */
   align-items: center;
-  padding: 0 1rem; /* Ajusta según tu diseño */
+  padding: 0 1rem;
+  /* Ajusta según tu diseño */
 }
 
 .navbar-brand img {
@@ -38,16 +40,21 @@ html {
   margin: 0;
 }
 .nav-list .nav-item {
-  display: flex; /* Asegura que el contenido y el separador estén en la misma línea */
+  display: flex;
+  /* Asegura que el contenido y el separador estén en la misma línea */
   align-items: center;
-  padding: 0 1rem; /* Espaciado horizontal entre los elementos */
+  padding: 0 1rem;
+  /* Espaciado horizontal entre los elementos */
   /* Agregar un palito separador */
   /* Elimina el palito del último elemento */
 }
 .nav-list .nav-item::after {
-  content: "|"; /* El separador */
-  margin-left: 1rem; /* Espaciado a la izquierda del separador */
-  color: #ffffff; /* Cambia por el color deseado */
+  content: "|";
+  /* El separador */
+  margin-left: 1rem;
+  /* Espaciado a la izquierda del separador */
+  color: #ffffff;
+  /* Cambia por el color deseado */
 }
 .nav-list .nav-item:last-child::after {
   content: none;
@@ -70,17 +77,20 @@ html {
 @media (max-width: 768px) {
   .nav-list {
     align-items: end;
-    flex-direction: column; /* Cambiar a vertical */
+    flex-direction: column;
+    /* Cambiar a vertical */
   }
   .nav-list .nav-item::after {
-    content: none; /* Elimina el separador */
+    content: none;
+    /* Elimina el separador */
   }
   .navbar {
     justify-content: space-between;
     align-items: center;
   }
   .navbar .navbar-brand img {
-    width: auto; /* Tamaño adaptable si es necesario */
+    width: auto;
+    /* Tamaño adaptable si es necesario */
     margin-left: 0%;
     max-height: 180px;
     max-width: 250px;
@@ -159,10 +169,12 @@ html {
 }
 @media (max-width: 768px) {
   #productos-novedad h3 {
-    font-size: 1.4rem; /* Ajusta el tamaño para tablets */
+    font-size: 1.4rem;
+    /* Ajusta el tamaño para tablets */
   }
   #productos-novedad p {
-    font-size: 1rem; /* Ajusta el tamaño para tablets */
+    font-size: 1rem;
+    /* Ajusta el tamaño para tablets */
   }
 }
 @media (max-width: 390px) {
@@ -255,7 +267,8 @@ html {
   }
 }
 .zoom-image-productos {
-  animation: zoomEffect 10s ease-in-out infinite; /* Animación continua de 5 segundos */
+  animation: zoomEffect 10s ease-in-out infinite;
+  /* Animación continua de 5 segundos */
 }
 
 .display-4-productos {
@@ -425,8 +438,10 @@ html {
 }
 
 .carousel-inner-productos .row {
-  margin: 0; /* Elimina márgenes laterales que puedan causar desbordamiento */
-  justify-content: center; /* Asegura que los productos estén centrados */
+  margin: 0;
+  /* Elimina márgenes laterales que puedan causar desbordamiento */
+  justify-content: center;
+  /* Asegura que los productos estén centrados */
 }
 
 .logo {
@@ -435,12 +450,15 @@ html {
 
 @media (max-width: 768px) {
   .carousel-inner-productos .row .col-6 {
-    max-width: 50%; /* Cada producto ocupa el 50% del ancho */
-    flex: 0 0 50%; /* Asegura que se mantengan dos productos por fila */
+    max-width: 50%;
+    /* Cada producto ocupa el 50% del ancho */
+    flex: 0 0 50%;
+    /* Asegura que se mantengan dos productos por fila */
   }
 }
 #carouselItems:hover {
-  transform: scale(1.1); /* Zoom estático al hacer hover */
+  transform: scale(1.1);
+  /* Zoom estático al hacer hover */
 }
 
 /* Animación de zoom para la imagen */
@@ -457,33 +475,42 @@ html {
 }
 .product-zoom {
   animation: heartbeat 1.5s infinite;
-  transition: transform 0.3s ease; /* Para suavizar cuando se detiene el hover */
+  transition: transform 0.3s ease;
+  /* Para suavizar cuando se detiene el hover */
 }
 
 .product-zoom:hover {
-  animation: none; /* Opcional: detiene la animación continua al hacer hover */
-  transform: scale(1.1); /* Zoom estático al hacer hover */
+  animation: none;
+  /* Opcional: detiene la animación continua al hacer hover */
+  transform: scale(1.1);
+  /* Zoom estático al hacer hover */
 }
 
 .product-info1 {
   display: flex;
-  flex-direction: column; /* Cambia a diseño vertical */
-  align-items: center; /* Centra los elementos horizontalmente */
+  flex-direction: column;
+  /* Cambia a diseño vertical */
+  align-items: center;
+  /* Centra los elementos horizontalmente */
 }
 
 #productTitleImg {
-  margin: 0 0 10px 0; /* Agrega un margen inferior para separar del producto */
-  width: 20%; /* Controla el ancho */
+  margin: 0 0 10px 0;
+  /* Agrega un margen inferior para separar del producto */
+  width: 20%;
+  /* Controla el ancho */
 }
 
 #productImage {
   margin: 0;
-  width: 50%; /* Controla el ancho */
+  width: 50%;
+  /* Controla el ancho */
 }
 
 button.btn-secondary {
   display: block;
-  margin: 0 auto 10px; /* Centra el botón y ajusta el margen inferior */
+  margin: 0 auto 10px;
+  /* Centra el botón y ajusta el margen inferior */
 }
 
 .product-info #textabovetable {
@@ -507,7 +534,8 @@ button.btn-secondary {
   border-collapse: collapse;
   margin-bottom: 1.5rem;
 }
-.product-info .table th, .product-info .table td {
+.product-info .table th,
+.product-info .table td {
   border: 1px solid rgb(44, 44, 44);
   padding: 0.8rem;
   text-align: left;
@@ -535,7 +563,8 @@ button.btn-secondary {
 .product-detail {
   background: linear-gradient(180deg, rgb(255, 254, 254) 0%, #C3C4C6 100%);
   margin-top: 0;
-  padding-bottom: 50px; /* separa del footer */
+  padding-bottom: 50px;
+  /* separa del footer */
   padding-top: 0;
 }
 
@@ -584,19 +613,21 @@ button.btn-secondary {
   color: rgb(44, 44, 44);
 }
 
-.card-nosotros p {
-  font-family: "DM Sans", sans-serif;
-  color: rgb(44, 44, 44);
+.gallery .image-wrapper {
+  overflow: hidden;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
 }
-
-.card-nosotros h4 {
-  font-family: "DM Sans", sans-serif;
-  color: rgb(44, 44, 44);
+.gallery .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.5s ease;
+  border-radius: 15px;
 }
-
-.card-body-nosotros {
-  background-color: #C3C4C6;
-  background: linear-gradient(180deg, rgb(255, 254, 254) 0%, #C3C4C6 100%);
+.gallery .image-wrapper:hover img {
+  transform: scale(1.1);
 }
 
 /* Estilo para el zoom in suave en la imagen */
@@ -623,7 +654,8 @@ button.btn-secondary {
 }
 
 .zoom-image-contacto {
-  animation: zoomEffect 10s ease-in-out infinite; /* Animación continua de 5 segundos */
+  animation: zoomEffect 10s ease-in-out infinite;
+  /* Animación continua de 5 segundos */
 }
 
 .display-4-contacto {
