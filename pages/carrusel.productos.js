@@ -350,7 +350,7 @@ const productos = {
             featuresColumn: ['Cada comprimido contiene:', 'mg'],
             featuresRow: ['Fórmula A', 'Fórmula B', 'Fórmula C', 'Fórmula D', 'Fórmula E', 'Fórmula F', 'Fórmula G'], 
             textAbove: 'Forma de uso:  Ver prospecto.',
-            textAbove2: 'Presentación: envases de 1 o 2 comprimidos.',
+            textAbove2: 'Presentación: envases de 15 comprimidos.',
             tabletitleproduct: 'QUARTIER está indicado en el tratamiento de la disfunción eréctil en hombres.',
             textBelow: 'ANTE CUALQUIER DUDA CONSULTE A SU MEDICO.',
             clarifiedtext: 'Medicamento venta bajo receta. Lea atentamente el prospecto. Ante la menor duda, consulte a su médico y/o farmacéutico.',
