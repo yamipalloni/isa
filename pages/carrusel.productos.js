@@ -224,9 +224,9 @@ const productos = {
         },
         { 
             img: '../multimedia/isagrip.png', titleImg: '../multimedia/logos/logo.isagrip.png', desc: 'Analgésico, antifebril, antitusivo y descongestivo',
-            features: ['Paracetamol', '500 mg','Fenilefrina Clorhidrato', '8 mg',' Butetamato citrato', '40 mg','almidón pregelatinizado, povidona K30, ácido esteárico, celulosa microcristalina, croscaramelosa sódica, estearato de magnésio, c. s', 'Excipientes' ],
+            features: ['Paracetamol', '500 mg','Fenilefrina Clorhidrato', '8 mg',' Butetamato citrato', '40 mg','Almidón pregelatinizado, povidona K30, ácido esteárico, celulosa microcristalina, croscaramelosa sódica, estearato de magnésio, c. s', 'Excipientes',' Cafeína', '30 mg', ],
             featuresColumn: ['Cada comprimido contiene:', 'mg'],
-            featuresRow: ['Fórmula A', 'Fórmula B', 'Fórmula C', 'Fórmula D'], 
+            featuresRow: ['Fórmula A', 'Fórmula B', 'Fórmula C', 'Fórmula D', 'Fórmula E'], 
             textAbove: 'Forma de uso: Adultos y mayores de 15 años: tomar 1 comprimido cada 8 horas, acompañado con un vaso de agua, jugo u otro líquido. Dosis máxima: 3 comprimidos. “SI LOS SINTOMAS DE DOLOR O FIEBRE PERSISTEN POR MÁS DE 3 DÍAS CONSULTE A SU MÉDICO',
             textAbove2: 'Presentación: 10 comprimidos.',
             tabletitleproduct: 'Analgésico - Antifebril - Antitusivo - Descongestivo',
